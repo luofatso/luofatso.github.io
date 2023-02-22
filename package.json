@@ -6,14 +6,22 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
+    "preview": "vitepress preview docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "set -e && vitepress build docs && cd ./docs/.vitepress/dist && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:lbj-monstar/blog.git master:git-pages && git push -f git@gitee.com:love-feel/blog.git master:git-pages"
+    "top": "vitepress build docs && cd ./dist && git init && git add -A && git commit -m 'deploy' &&  git push -f git@gitee.com:love-feel/blog.git master:git-pages"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vitepress": "1.0.0-alpha.20"
+    "vitepress": "1.0.0-alpha.47",
+    "vue": "^3.2.47"
+  },
+   "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }
