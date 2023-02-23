@@ -1,5 +1,6 @@
 export default [
   { text: '首页', link: '/' },
+  { text: '关于我', link: '/about' },
   {
     text: '个人随笔',
     items: [
