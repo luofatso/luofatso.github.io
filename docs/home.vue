@@ -3,11 +3,30 @@
     <div class="home-top">
       <h1>FatsoLuo</h1>
       <p>不喜欢代码，想自由。</p>
+      <p>但，谁又不是，</p>
+      <p>生活在不一样的‘牢笼’之中呢</p>
     </div>
     <div class="home-main">
-      <p>
-        越是期盼，越是数着过的日子，往往都是遥遥无期的、索然无味的；在那短短的一个月里，是我当时感知的那种从未有过的、无法逾越的日期鸿沟；那是自我两第一次见面分开后，我们决定一起再相遇北京的一个月，是期待与煎熬携手书写画描心动的一月，是酷暑与激情并肩藏酝酵酿爱情的一月。
-      </p>
+      <p>《追光者》</p>
+      <pre>
+      那些遥遥无期
+      黯然失色
+      满眼是光
+      全是期盼着
+      数着过来的日子里
+
+      时间的鸿沟
+      从未感知
+      是从未拥有过的
+
+      其实早已悄悄
+      书写画描
+      藏酝酵酿
+    
+      奇迹不待
+      花开 月圆
+      只需静待
+      </pre>
     </div>
   </div>
 </template>
@@ -65,10 +84,18 @@
   padding-bottom: 10px;
 }
 
+.home-top p {
+  line-height: 2;
+}
+
 .home-main {
   width: 65%;
   margin: 0 auto;
-  text-indent: 2em;
-  padding-top: 200px;
+  /* text-indent: 2em; */
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>
