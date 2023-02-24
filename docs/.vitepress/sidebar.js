@@ -20,7 +20,7 @@ export default {
       collapsed: true,
       items: [
         { text: '不小心', link: '/个人随笔/星光/不小心' },
-        { text: '离舍', link: '/个人随笔/星光/离舍' },
+        // { text: '离舍', link: '/个人随笔/星光/离舍' },
         { text: '傻孩子', link: '/个人随笔/星光/傻孩子' },
         { text: '为，什么', link: '/个人随笔/星光/为，什么' },
         { text: '无限生活', link: '/个人随笔/星光/无限生活' },
