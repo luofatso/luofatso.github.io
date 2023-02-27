@@ -3,20 +3,29 @@ import sidebar from './sidebar'
 
 export default {
   title: 'FatsoLuo',
-  description: 'FatsoLuo',
+  description: 'FatsoLuo的个人博客，记录随笔与学习笔记，大前端相关的知识等',
   srcDir: '../docs',
   outDir: '../dist',
   base: "/blog/",
   cleanUrls: true,
   head: [
+    ['meta', { name: 'keywords', content: '生活,随笔,HTML,CSS,JavaScript' }],
+    ['link', { rel: 'icon', href: '/baby.png', type: 'image/png' }],
     [
       'link',
       {
-        rel: 'icon',
+        rel: 'alternate icon',
         href: '/baby.png',
-      },
+        type: 'image/png',
+        sizes: '16x16'
+      }
     ],
-    ['meta', { name: 'keywords', content: '生活,随笔,HTML,CSS,JavaScript,' }],
+    ['meta', { name: 'author', content: 'FatsoLuo' }],
+    ['link', { rel: 'mask-icon', href: '/baby.png', color: '#ffffff' }],
+    [
+      'link',
+      { rel: 'apple-touch-icon', href: '/baby.png', sizes: '180x180' }
+    ],
   ],
   themeConfig: {
     author: 'FatsoLuo',
@@ -33,5 +42,11 @@ export default {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present FatsoLuo',
     },
+  },
+  vite: {
+    server: {
+      port: 8080,
+      host: '0.0.0.0'
+    }
   },
 }
