@@ -29,6 +29,15 @@ export default [
     ],
   },
   {
+    text: '关于生活',
+    items: [
+      {
+        text: '求婚',
+        link: '/关于生活/I love you/求婚'
+      }
+    ],
+  },
+  {
     text: '大前端',
     items: [
       {
@@ -38,6 +47,14 @@ export default [
       {
         text: 'JavaScript',
         link: '/JS/'
+      },
+      {
+        text: 'Vue2',
+        link: '/vue2/'
+      },
+      {
+        text: 'Vue3',
+        link: '/vue3/'
       },
     ],
   },

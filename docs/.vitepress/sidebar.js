@@ -1,17 +1,28 @@
 export default {
   '/个人随笔/': [
     {
-      text: '修远兮',
+      text: '星星',
       collapsible: true,
       collapsed: true,
       items: [
         {
-          text: '星星',
-          link: '/个人随笔/星星/路漫漫其修远兮',
+          text: '修远兮',
+          link: '/个人随笔/星星/修远兮',
         },
         { text: '星星', link: '/个人随笔/星星/星星' },
         { text: '驿站', link: '/个人随笔/星星/驿站' },
         { text: '错误', link: '/个人随笔/星星/错误' },
+      ],
+    },
+    {
+      text: '点点',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: '逆向思维',
+          link: '/个人随笔/点点/逆向思维',
+        },
       ],
     },
     {
@@ -75,5 +86,30 @@ export default {
     { text: '原生js拖拽', link: '/JS/原生js拖拽' },
     { text: 'JS返回顶部', link: '/JS/js返回顶部的几种解决方案' },
     { text: 'JS片段', link: '/JS/JS片段' },
+  ],
+  '/vue2/': [
+    {
+      text: '图片裁剪、压缩、上传、预览组件',
+      link: '/vue2/图片裁剪、压缩、上传、预览组件',
+    },
+    {
+      text: 'element树形结构+穿梭框实例',
+      link: '/vue2/element树形结构+穿梭框实例',
+    },
+    { text: 'socket应用', link: '/vue2/socket应用' },
+    { text: 'vue transition', link: '/vue2/vue transition' },
+    { text: 'vue-clipboard2使用', link: '/vue2/vue-clipboard2使用' },
+    { text: 'vue-lottie使用', link: '/vue2/vue-lottie使用' },
+    { text: 'vue2 slot', link: '/vue2/vue2 slot' },
+    { text: 'Vue锚点双向定位', link: '/vue2/Vue锚点双向定位' },
+    { text: 'vue一些小技巧总结', link: '/vue2/vue一些小技巧总结' },
+    { text: 'vue中使用音视频', link: '/vue2/vue中使用音视频' },
+  ],
+  '/vue3/': [
+    { text: 'pinia使用', link: '/vue3/pinia使用' },
+    { text: 'vue3好用的插件记录', link: '/vue3/vue3好用的插件记录' },
+    { text: 'vue3一些语法的使用', link: '/vue3/vue3一些语法的使用' },
+    { text: 'vue3知识点巩固', link: '/vue3/vue3知识点巩固' },
+    { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' },
   ],
 }
