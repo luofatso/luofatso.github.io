@@ -35,8 +35,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '关于生活',
     items: [
       {
-        text: '求婚',
-        link: '/关于生活/I love you/求婚'
+        text: 'I love you',
+        link: '/关于生活/I love you/'
       },
       {
         text: '小工具',
