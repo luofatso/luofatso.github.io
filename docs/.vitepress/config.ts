@@ -9,26 +9,12 @@ export default defineConfig({
   outDir: '../dist',
   base: "/blog/",
   cleanUrls: true,
-  head: [
-    ['meta', { name: 'keywords', content: '生活,随笔,HTML,CSS,JavaScript' }],
-    ['link', { rel: 'icon', href: '/baby.png', type: 'image/png' }],
-    [
-      'link',
-      {
-        rel: 'alternate icon',
-        href: '/baby.png',
-        type: 'image/png',
-        sizes: '16x16'
-      }
-    ],
-    ['meta', { name: 'author', content: 'FatsoLuo' }],
-    ['link', { rel: 'mask-icon', href: '/baby.png', color: '#ffffff' }],
-    [
-      'link',
-      { rel: 'apple-touch-icon', href: '/baby.png', sizes: '180x180' }
-    ],
-  ],
+  head,
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
+    i18nRouting: false,
     // author: 'FatsoLuo',
     siteTitle: 'FatsoLuo',
     logo: '/baby.png', //导航栏左侧头像
