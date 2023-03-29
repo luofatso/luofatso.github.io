@@ -7,24 +7,24 @@
     <div class="home-main">
       <p>《追光者》</p>
       <pre>
-      那些遥遥无期
-      混沌颠倒
-      满眼是光
-      又憧憬着
-      数着过的时间里
+        那些遥遥无期
+        混沌颠倒
+        满眼是光
+        又憧憬着
+        数着过的时间里
 
-      时间若鸿沟
-      是从未感知
-      是从未拥有过的
+        时间若鸿沟
+        是从未感知
+        是从未拥有过的
 
-      其实早已悄然
-      书写画描
-      藏酝酵酿
+        其实早已悄然
+        书写画描
+        藏酝酵酿
   
-      奇迹不待
-      花开自然
-      只需静待
-      </pre>
+        奇迹不待
+        花开自然
+        只需静待
+        </pre>
     </div>
   </div>
 </template>
@@ -32,50 +32,6 @@
 
 
 </script>
-<style>
-::-webkit-scrollbar {
-  width: 8px;
-  height: 0;
-  background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-/* ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-corner {
-  background: none;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: #8D8D8D;
-} */
-.box-center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.d-flex{
-  display: flex;
-}
-.flex-col{
-  flex-direction: column;
-}
-</style>
 <style scoped lang="scss">
 .home {
   &-top {
