@@ -2,6 +2,6 @@
 layout: home
 ---
 <script setup>
-import home from './components/about.vue'
+import about from './components/about.vue'
 </script>
-<home />
+<about />

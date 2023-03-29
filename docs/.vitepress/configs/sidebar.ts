@@ -1,8 +1,10 @@
-export default {
+import type { DefaultTheme } from 'vitepress'
+
+export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/个人随笔/': [
     {
       text: '星星',
-      collapsible: true,
+      // collapsible: true,
       collapsed: true,
       items: [
         {
@@ -16,7 +18,7 @@ export default {
     },
     {
       text: '点点',
-      collapsible: true,
+      // collapsible: true,
       collapsed: true,
       items: [
         {
@@ -27,7 +29,7 @@ export default {
     },
     {
       text: '星光',
-      collapsible: true,
+      // collapsible: true,
       collapsed: true,
       items: [
         { text: '不小心', link: '/个人随笔/星光/不小心' },
@@ -40,7 +42,7 @@ export default {
     },
     {
       text: '骚动的心',
-      collapsible: true,
+      // collapsible: true,
       collapsed: true,
       items: [
         { text: '追光者', link: '/个人随笔/骚动的心/追光者' },
@@ -111,5 +113,15 @@ export default {
     { text: 'vue3一些语法的使用', link: '/vue3/vue3一些语法的使用' },
     { text: 'vue3知识点巩固', link: '/vue3/vue3知识点巩固' },
     { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' },
+  ],
+  '/前端工具/': [
+    { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
+    { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' },
+  ],
+  '前端其它/': [
+    { text: '随机彩票', link: '/前端其它/随机彩票' },
+    { text: '前端SEQ方案', link: '/前端其它/前端SEQ方案' },
+    { text: 'videojs-flvh265直播', link: '/前端其它/videojs-flvh265直播' },
+    { text: 'doT.js -- JavaScript 模板引擎使用', link: '/前端其它/doT.js -- JavaScript 模板引擎使用' },
   ],
 }

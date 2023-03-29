@@ -1,11 +1,17 @@
 {
-  "hash": "00f14890",
-  "browserHash": "2e8817ec",
+  "hash": "422f3cb6",
+  "browserHash": "7a83c7c1",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "1eec4859",
+      "fileHash": "a6974a75",
+      "needsInterop": false
+    },
+    "@mdit-vue/shared": {
+      "src": "../../../../node_modules/.pnpm/@mdit-vue+shared@0.12.0/node_modules/@mdit-vue/shared/dist/index.mjs",
+      "file": "@mdit-vue_shared.js",
+      "fileHash": "9dba66f9",
       "needsInterop": false
     }
   },

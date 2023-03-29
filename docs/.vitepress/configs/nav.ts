@@ -1,6 +1,9 @@
-export default [
+import type { DefaultTheme } from 'vitepress'
+
+export const nav: DefaultTheme.Config['nav'] = [
   { text: '首页', link: '/' },
   { text: '关于我', link: '/about' },
+  { text: '网站导航', link: '/nav' },
   {
     text: '个人随笔',
     items: [
@@ -55,6 +58,18 @@ export default [
       {
         text: 'Vue3',
         link: '/vue3/'
+      },
+      {
+        text: '工具',
+        link: '/前端工具/'
+      },
+      {
+        text: '其它',
+        link: '/前端其它/'
+      },
+      {
+        text: '总结',
+        link: '/项目总结/'
       },
     ],
   },

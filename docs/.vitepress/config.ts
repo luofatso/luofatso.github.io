@@ -1,7 +1,8 @@
-import nav from './nav'
-import sidebar from './sidebar'
+import { defineConfig } from 'vitepress'
 
-export default {
+import { head, nav, sidebar } from './configs'
+
+export default defineConfig({
   title: 'FatsoLuo',
   description: 'FatsoLuo的个人博客，记录随笔与学习笔记，大前端相关的知识等',
   srcDir: '../docs',
@@ -28,13 +29,17 @@ export default {
     ],
   ],
   themeConfig: {
-    author: 'FatsoLuo',
+    // author: 'FatsoLuo',
     siteTitle: 'FatsoLuo',
     logo: '/baby.png', //导航栏左侧头像
     docFooter: {
       //上下篇文本
       prev: '上一篇',
       next: '下一篇',
+    },
+    outline: {
+      level: 'deep',
+      label: '本页目录'
     },
     nav,
     sidebar,
@@ -49,4 +54,4 @@ export default {
       host: '0.0.0.0'
     }
   },
-}
+})
