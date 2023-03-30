@@ -81,7 +81,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'css文字渐变', link: '/css/css文字渐变' },
     { text: 'css画三角形', link: '/css/css画三角形' },
     { text: 'css超出省略', link: '/css/css超出省略' },
-    { text: 'grid布局', link: '/css/grid布局' }
+    { text: 'grid布局', link: '/css/grid布局' },
+    { text: 'css立体投影', link: '/css/css立体投影' }
   ],
   '/JS/': [
     { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
