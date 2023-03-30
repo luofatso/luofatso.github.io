@@ -1,5 +1,11 @@
 # css文字渐变
 
+<script setup lang='ts'>
+import FontLine from './components/FontLine.vue'
+</script>
+
+<FontLine />
+
 ```
 <p>我是渐变色的文字</p>
 
