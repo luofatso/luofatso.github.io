@@ -30,17 +30,6 @@
   background: #8D8D8D;
 } */
 
-.box-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.d-flex {
-  display: flex;
-}
-.flex-col {
-  flex-direction: column;
-}
 :root {
   --c-green: #42b883;
   --c-green-light: #42d392;
@@ -68,3 +57,132 @@
   --c-purple-dark: #823c83;
   --c-purple-darker: #602960;
 }
+
+@mixin no-wrap() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin num-wrap($lineNum: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lineNum;
+  -webkit-box-orient: vertical;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.self-start {
+  align-self: flex-start;
+}
+.box-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-c {
+  text-align: center;
+}
+.text-l {
+  text-align: left;
+}
+.text-r {
+  text-align: right;
+}
+
+@for $i from 1 through 19 {
+  .font-#{9 + $i} {
+    font-size: 9 + $i + px !important;
+    line-height: 9 + $i + px;
+  }
+  .ma-#{-1 + $i} {
+    margin: ($i - 1) * 4 + px !important;
+  }
+  .mt-#{-1 + $i} {
+    margin-top: ($i - 1) * 4 + px !important;
+  }
+  .mr-#{-1 + $i} {
+    margin-right: ($i - 1) * 4 + px !important;
+  }
+  .ml-#{-1 + $i} {
+    margin-left: ($i - 1) * 4 + px !important;
+  }
+  .mb-#{-1 + $i} {
+    margin-bottom: ($i - 1) * 4 + px !important;
+  }
+  .mx-#{-1 + $i} {
+    margin: 0 ($i - 1) * 4 + px !important;
+  }
+  .my-#{-1 + $i} {
+    margin: ($i - 1) * 4 + px 0 !important;
+  }
+  .pa-#{-1 + $i} {
+    padding: ($i - 1) * 4 + px !important;
+  }
+  .px-#{-1 + $i} {
+    padding: 0 ($i - 1) * 4 + px !important;
+  }
+  .py-#{-1 + $i} {
+    padding: ($i - 1) * 4 + px 0 !important;
+  }
+  .pt-#{-1 + $i} {
+    padding-top: ($i - 1) * 4 + px !important;
+  }
+  .pl-#{-1 + $i} {
+    padding-left: ($i - 1) * 4 + px !important;
+  }
+  .pr-#{-1 + $i} {
+    padding-right: ($i - 1) * 4 + px !important;
+  }
+  .pb-#{-1 + $i} {
+    padding-bottom: ($i - 1) * 4 + px !important;
+  }
+}
+
+@for $i from 1 through 3 {
+  .flex-#{$i} {
+    flex: $i !important;
+  }
+
+  .line-#{$i} {
+    @include num-wrap($i);
+  }
+  .font-#{400 + $i*100} {
+    font-weight: 400 + $i * 100 !important;
+  }
+}
+
