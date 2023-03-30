@@ -15,9 +15,13 @@ display: inline-grid;
 容器指定了网格布局以后，接着就要划分行和列。`grid-template-columns`属性定义每一列的列宽，`grid-template-rows`属性定义每一行的行高。
 
 > repeat(num:重复数量, number:重复数值) num为关键字`auto-fill`关键字时，为`number`值尽可能多表示。
+
 > fr关键字；剩下的倍数划分的意思，类似flex：1；
+
 > minmax(min, max),接受两个参数，分别为最小值和最大值。取值在两者之间。
+
 > auto关键字；浏览器自动分配。
+
 > 网格线的名称 ` grid-template-columns: [c1] 100px [c2] 100px [c3] auto [c4]; grid-template-rows: [r1] 100px [r2] 100px [r3] auto [r4];`; 允许同一根线有多个名字，比如 `[fifth-line row-5]`。
 
 
@@ -121,7 +125,6 @@ place-self: <align-self> <justify-self>; 一个值是为两个相等
 ## 3拓展
 
 [在线演示](https://codepen.io/luofatso/pen/wvyReNo)
-[参考阮一峰 CSS Grid布局](http://ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
 ```
 <!DOCTYPE html>
@@ -180,3 +183,7 @@ place-self: <align-self> <justify-self>; 一个值是为两个相等
 </html>
 
 ```
+
+## 参考学习
+
+[参考阮一峰 CSS Grid布局](http://ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
