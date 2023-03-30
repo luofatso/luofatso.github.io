@@ -608,7 +608,7 @@ export const calendar = {
    * @return JSON object
    * @eg:console.log(calendar.lunar2solar(1987,9,10));
    */
-  lunar2solar: function (y, m, d, isLeapMonth) {
+  lunar2solar: function (y, m, d, isLeapMonth = false) {
       y = parseInt(y)
       m = parseInt(m)
       d = parseInt(d)
