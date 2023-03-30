@@ -3,6 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@femm/prettier': ^1.0.1
   '@mdit-vue/shared': ^0.12.0
+  dayjs: ^1.11.7
+  js-calendar-converter: ^0.0.4
   sass: ^1.58.3
   vitepress: 1.0.0-alpha.48
   vue: ^3.2.47
@@ -10,6 +12,8 @@ specifiers:
 devDependencies:
   '@femm/prettier': 1.0.2
   '@mdit-vue/shared': 0.12.0
+  dayjs: 1.11.7
+  js-calendar-converter: 0.0.4
   sass: 1.58.3
   vitepress: 1.0.0-alpha.48_sass@1.58.3
   vue: 3.2.47
@@ -620,6 +624,10 @@ packages:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
     dev: true
 
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: true
+
   /entities/3.0.1:
     resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==}
     engines: {node: '>=0.12'}
@@ -724,6 +732,10 @@ packages:
   /is-number/7.0.0:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
+    dev: true
+
+  /js-calendar-converter/0.0.4:
+    resolution: {integrity: sha512-oF6kRS65Hn8BKwZVRn/0Mpwzgihv+v/9Wt6ioaNvhHbb7sbXyOTzfq36G5eC2EfB/VzXyMQx6+if83/bwARw+A==}
     dev: true
 
   /jsonc-parser/3.2.0:

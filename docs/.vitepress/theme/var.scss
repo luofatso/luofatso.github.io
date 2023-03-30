@@ -58,6 +58,19 @@
   --c-purple-darker: #602960;
 }
 
+.primary {
+  color: #fff;
+  background-color: var(--c-blue);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--c-blue-light);
+  }
+}
+.primary--text {
+  color: var(--c-blue);
+}
+
 @mixin no-wrap() {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -124,6 +137,22 @@
   text-align: right;
 }
 
+.full-w {
+  width: 100%;
+}
+.full-h {
+  height: 100%;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+.full-v {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
 @for $i from 1 through 19 {
   .font-#{9 + $i} {
     font-size: 9 + $i + px !important;
@@ -185,4 +214,3 @@
     font-weight: 400 + $i * 100 !important;
   }
 }
-
