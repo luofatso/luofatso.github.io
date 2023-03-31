@@ -45,6 +45,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       // collapsible: true,
       collapsed: true,
       items: [
+        { text: '窗外', link: '/个人随笔/骚动的心/窗外' },
         { text: '追光者', link: '/个人随笔/骚动的心/追光者' },
         { text: '叶子', link: '/个人随笔/骚动的心/叶子' },
         { text: '随心所欲', link: '/个人随笔/骚动的心/随心所欲' },
