@@ -85,6 +85,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'css立体投影', link: '/css/css立体投影' },
     { text: 'css画一个三只小鸟按钮', link: '/css/css画一个三只小鸟按钮' },
     { text: '渐变边框动画', link: '/css/渐变边框动画' },
+    { text: 'css边框图片动画', link: '/css/css边框图片动画' },
   ],
   '/JS/': [
     { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
