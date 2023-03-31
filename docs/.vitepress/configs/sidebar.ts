@@ -83,7 +83,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'css超出省略', link: '/css/css超出省略' },
     { text: 'grid布局', link: '/css/grid布局' },
     { text: 'css立体投影', link: '/css/css立体投影' },
-    { text: 'css画一个三只小鸟按钮', link: '/css/css画一个三只小鸟按钮' }
+    { text: 'css画一个三只小鸟按钮', link: '/css/css画一个三只小鸟按钮' },
+    { text: '渐变边框动画', link: '/css/渐变边框动画' },
   ],
   '/JS/': [
     { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
