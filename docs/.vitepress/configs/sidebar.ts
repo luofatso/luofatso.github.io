@@ -89,6 +89,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '旋转卡片', link: '/css/旋转卡片' },
     { text: '立方体旋转', link: '/css/立方体旋转' },
     { text: 'css自动打字器', link: '/css/css自动打字器' },
+    { text: 'css loading', link: '/css/css-loading' },
   ],
   '/JS/': [
     { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
