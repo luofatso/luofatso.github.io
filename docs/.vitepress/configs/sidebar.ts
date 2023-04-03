@@ -96,7 +96,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
     { text: '原生js拖拽', link: '/JS/原生js拖拽' },
     { text: 'JS返回顶部', link: '/JS/js返回顶部的几种解决方案' },
-    { text: 'JS片段', link: '/JS/JS片段' }
+    { text: 'JS片段', link: '/JS/JS片段' },
+    { text: '本地储存', link: '/JS/本地储存' }
   ],
   '/vue2/': [
     {
