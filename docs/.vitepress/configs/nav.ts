@@ -39,6 +39,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/关于生活/I love you/'
       },
       {
+        text: '旅行',
+        link: '/关于生活/旅行/'
+      },
+      {
         text: '小工具',
         link: '/关于生活/小工具/'
       }

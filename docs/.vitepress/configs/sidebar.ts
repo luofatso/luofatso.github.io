@@ -137,10 +137,30 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/前端其它/doT.js -- JavaScript 模板引擎使用'
     }
   ],
-  '/关于生活/小工具/': [
-    { text: 'BMI计算器', link: '/关于生活/小工具/bmi' },
-    { text: '阴阳历查询', link: '/关于生活/小工具/阴阳历查询' },
-    { text: '倒计时查询', link: '/关于生活/小工具/date' },
-    { text: '吃什么', link: '/关于生活/小工具/eat' }
-  ]
+  '/关于生活/':[
+    {
+      text: 'I Love You',
+      collapsed: true,
+      items: [
+        { text: '求婚', link: '/关于生活/I love you/求婚' },
+      ]
+    },
+    {
+      text: '旅行',
+      collapsed: true,
+      items: [
+        { text: '练车三连', link: '/关于生活/旅行/练车三连' },
+      ]
+    },
+    {
+      text: '小工具',
+      collapsed: true,
+      items: [
+        { text: 'BMI计算器', link: '/关于生活/小工具/bmi' },
+        { text: '阴阳历查询', link: '/关于生活/小工具/阴阳历查询' },
+        { text: '倒计时查询', link: '/关于生活/小工具/date' },
+        { text: '吃什么', link: '/关于生活/小工具/eat' }
+      ]
+    },
+  ],
 }
