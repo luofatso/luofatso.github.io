@@ -152,6 +152,9 @@
   min-height: 100vh;
   overflow-y: auto;
 }
+.w100 {
+  width: 100%;
+}
 
 @for $i from 1 through 19 {
   .font-#{9 + $i} {
