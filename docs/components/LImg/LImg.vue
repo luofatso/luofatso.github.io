@@ -2,7 +2,7 @@
   <div v-if="imgs.length" class="d-flex flex-wrap pt-4 img-box"
     :class="imgs.length == 1 ? 'justify-center' : 'justify-between'">
     <div class="mb-1 img-box-item" v-for="(it, i) in imgs" :key="i" :class="'imgs' + (imgs.length < 3 ? imgs.length : 3)"
-      @click="openImg(it)" :style="{flex: imgs.length === 1 ? '0 0 '+width+'%' : '' }">
+      @click="openImg(it)" :style="{ flex: imgs.length === 1 ? '0 0 ' + width + '%' : '' }">
       <img class="w100" :src="it.src" :alt='it.title' :title='it.title'>
     </div>
   </div>
@@ -29,12 +29,11 @@ const openImg = (it: IImgItem) => {
 }
 </script>
 <style lang='scss' scoped>
+.img-intr {
+  color: #999;
+  margin: 10px 0 16px;
+}
 .img-box {
-  .img-intr {
-    color: #999;
-    margin: 10px 0 16px;
-  }
-
   .imgs1 {
     flex: 0 0 65%;
   }
@@ -46,8 +45,11 @@ const openImg = (it: IImgItem) => {
   .imgs3 {
     flex: 0 0 33%;
   }
-  .imgs2,.imgs3{
-    border: 1px solid rgba(82, 82, 89, 0.32);;
+
+  .imgs2,
+  .imgs3 {
+    border: 1px solid rgba(82, 82, 89, 0.32);
+    ;
     display: flex;
     align-items: center;
   }
@@ -67,7 +69,8 @@ const openImg = (it: IImgItem) => {
 
       flex: 0 0 100% !important;
     }
-    &-item{
+
+    &-item {
       border: none !important;
     }
   }
@@ -102,5 +105,4 @@ const openImg = (it: IImgItem) => {
     cursor: zoom-out;
     will-change: transform;
   }
-}
-</style>
+}</style>
