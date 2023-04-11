@@ -16,6 +16,11 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
+// 处理代码块出现纵向滚动条
+.vp-doc div[class*='language-']{
+  overflow-y: hidden;
+}
+
 /* ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
