@@ -150,6 +150,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       collapsed: true,
       items: [
         { text: '练车三连', link: '/关于生活/旅行/练车三连' },
+        { text: '龙泉紫霞山', link: '/关于生活/旅行/龙泉紫霞山' },
       ]
     },
     {
