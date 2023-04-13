@@ -154,6 +154,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     },
     {
+      text: '生活',
+      collapsed: true,
+      items: [
+        { text: '每日一点', link: '/关于生活/生活/每日一点' },
+        { text: '露台阳光', link: '/关于生活/生活/露台阳光' },
+      ]
+    },
+    {
       text: '小工具',
       collapsed: true,
       items: [
