@@ -13,7 +13,9 @@ export default defineConfig({
   markdown: {
     lineNumbers: true
   },
+  lastUpdated: true,
   themeConfig: {
+    lastUpdatedText: "最近更新时间",
     i18nRouting: false,
     // author: 'FatsoLuo',
     siteTitle: 'FatsoLuo',

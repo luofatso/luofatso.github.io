@@ -26,6 +26,7 @@
     "dayjs": "^1.11.7",
     "js-calendar-converter": "^0.0.4",
     "sass": "^1.58.3",
+    "valine": "^1.5.1",
     "vitepress": "1.0.0-alpha.48",
     "vue": "^3.2.47"
   },

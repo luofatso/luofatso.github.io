@@ -1,9 +1,10 @@
 import { h, App } from 'vue'
 import { useData } from 'vitepress'
-import Theme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme'
+import MyLayout from './MyLayout.vue'
 import './var.scss'
 
-export default Object.assign({}, Theme, {
+export default Object.assign({}, DefaultTheme, {
   Layout: () => {
     const props: Record<string, any> = {}
     // 获取 frontmatter
@@ -14,6 +15,6 @@ export default Object.assign({}, Theme, {
       props.class = frontmatter.value.layoutClass
     }
 
-    return h(Theme.Layout, props)
+    return h(MyLayout, props)
   }
 })
