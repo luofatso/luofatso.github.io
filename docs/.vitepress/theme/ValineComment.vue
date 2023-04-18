@@ -1,5 +1,16 @@
 <template>
-  <div id="vcomments" class="pt-8"></div>
+  <div class="page">
+    <section class="page-edit">
+      <div class="page-edit-read py-4 text-r">
+        <!-- id 将作为查询条件 -->
+        <span class="leancloud-visitors" data-flag-title="Your Article Title">
+          <em class="post-meta-item-text">阅读量： </em>
+          <i class="leancloud-visitors-count"></i>
+        </span>
+      </div>
+      <div id="vcomments"></div>
+    </section>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -11,7 +22,7 @@ const route = useRoute();
 
 const initValine = () => {
   let path = location.origin + location.pathname;
-  // document.getElementsByClassName("leancloud-visitors")[0].id = path;
+  document.getElementsByClassName("leancloud-visitors")[0].id = path;
   new Valine({
     el: "#vcomments",
     appId: "F0hu8j3RsyXQN05lmGOSGvoX-gzGzoHsz",
@@ -39,7 +50,7 @@ onMounted(() => {
   remoteImport('//unpkg.com/valine/dist/Valine.min.js').then(() => initValine());
 });
 
-const remoteImport = (url:string) => {
+const remoteImport = (url: string) => {
   return new Promise<void>((resolve) => {
     var head = document.getElementsByTagName("head")[0];
     var script = document.createElement("script");
@@ -57,6 +68,4 @@ const remoteImport = (url:string) => {
 </script>
 
 
-<style lang='scss' scoped>
-  
-</style>
+<style lang='scss' scoped></style>
