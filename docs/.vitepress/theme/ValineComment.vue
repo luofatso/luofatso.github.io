@@ -34,14 +34,13 @@ const initValine = () => {
     avatar: "mm",
     enableQQ: true,// 启用昵称框自动获取QQ昵称和QQ头像
     placeholder:
-      "请在这里留下你的留言，如果上面填写了邮箱还能收到邮件哟，地址是点击头像跳转的地址",
+      "你来与不来，我就在这里，不远不近",
   });
 };
 
 watch(
   () => route.path,
   () => {
-    console.log("监听路由变化");
     initValine();
   }
 );
