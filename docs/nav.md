@@ -1,5 +1,6 @@
 ---
 # layout: home
+layout: Layout
 layoutClass: nav-layout
 outline: [2, 3, 4]
 lastUpdated: false
