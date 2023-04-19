@@ -137,6 +137,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/前端其它/doT.js -- JavaScript 模板引擎使用'
     }
   ],
+  '/关于工作/前端甲骨文/': [
+    { text: '前端甲骨文系列 --- HTML & CSS', link: '/关于工作/前端甲骨文/HTML & CSS' },
+    { text: '前端甲骨文系列 --- JavaScript', link: '/关于工作/前端甲骨文/JavaScript' },
+    { text: '前端甲骨文系列 --- 计算机基础', link: '/关于工作/前端甲骨文/计算机基础' },
+    { text: '前端甲骨文系列 --- 数据结构和算法', link: '/关于工作/前端甲骨文/数据结构和算法' },
+    { text: '前端甲骨文系列 --- 运行环境', link: '/关于工作/前端甲骨文/运行环境' },
+    { text: '前端甲骨文系列 --- 前端工程', link: '/关于工作/前端甲骨文/前端工程' },
+    { text: '前端甲骨文系列 --- 项目和业务', link: '/关于工作/前端甲骨文/项目和业务' },
+  ],
   '/关于生活/':[
     {
       text: 'I Love You',

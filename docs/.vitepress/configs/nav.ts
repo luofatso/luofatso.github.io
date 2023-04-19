@@ -72,6 +72,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/vue3/'
       },
       {
+        text: '前端甲骨文',
+        link: '/关于工作/前端甲骨文/'
+      },
+      {
         text: '工具',
         link: '/前端工具/'
       },
