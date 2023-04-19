@@ -2,6 +2,7 @@
 # layout: home
 layoutClass: nav-layout
 outline: [2, 3, 4]
+lastUpdated: false
 ---
 
 # 网站导航
