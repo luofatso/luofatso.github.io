@@ -2,7 +2,7 @@
 outline: [2, 3]
 ---
 
-# 前端甲骨文系列 --- JavaScript
+# 前端自检系列 --- JavaScript
 
 [[TOC]]
 
