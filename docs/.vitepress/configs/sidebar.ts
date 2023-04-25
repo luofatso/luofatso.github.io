@@ -169,6 +169,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       collapsed: true,
       items: [
         { text: '每日一点', link: '/关于生活/生活/每日一点' },
+        { text: '间隙', link: '/关于生活/生活/间隙' },
         { text: '露台阳光', link: '/关于生活/生活/露台阳光' },
       ]
     },
