@@ -122,7 +122,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'vue3好用的插件记录', link: '/vue3/vue3好用的插件记录' },
     { text: 'vue3一些语法的使用', link: '/vue3/vue3一些语法的使用' },
     { text: 'vue3知识点巩固', link: '/vue3/vue3知识点巩固' },
-    { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' }
+    { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' },
+    { text: 'element-plus多选框', link: '/vue3/element-plus-table多选框' },
   ],
   '/前端工具/': [
     { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
