@@ -160,6 +160,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '旅行',
       collapsed: true,
       items: [
+        { text: '锦里', link: '/关于生活/旅行/锦里' },
         { text: '练车三连', link: '/关于生活/旅行/练车三连' },
         { text: '龙泉紫霞山', link: '/关于生活/旅行/龙泉紫霞山' },
         { text: '彭州阳平玄观竹海', link: '/关于生活/旅行/彭州阳平玄观竹海' },
