@@ -34,7 +34,7 @@ const initValine = () => {
     avatar: "mm",
     enableQQ: true,// 启用昵称框自动获取QQ昵称和QQ头像
     placeholder:
-      "你来与不来，我就在这里，不远不近",
+      "你来与不来，我就在这里，不远不近...昵称处输入QQ号回车，可加载QQ头像和昵称",
   });
 };
 
