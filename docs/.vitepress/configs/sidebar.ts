@@ -160,7 +160,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '旅行',
       collapsed: true,
       items: [
-        { text: '乐山', link: '/关于生活/旅行/大邑龙窝子' },
+        { text: '康定木格措', link: '/关于生活/旅行/康定-木格措' },
+        { text: '大邑龙窝子', link: '/关于生活/旅行/大邑龙窝子' },
         { text: '乐山', link: '/关于生活/旅行/乐山' },
         { text: '东郊记忆', link: '/关于生活/旅行/东郊记忆' },
         { text: '锦里', link: '/关于生活/旅行/锦里' },
