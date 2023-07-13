@@ -130,6 +130,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' }
   ],
   '/前端其它/': [
+    { text: '视频点击放大', link: '/前端其它/视频点击放大' },
     { text: '随机彩票', link: '/前端其它/随机彩票' },
     { text: '前端SEQ方案', link: '/前端其它/前端SEQ方案' },
     { text: 'videojs-flvh265直播', link: '/前端其它/videojs-flvh265直播' },

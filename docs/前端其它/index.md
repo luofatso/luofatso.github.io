@@ -4,6 +4,7 @@
 
 ## 目录
 
+1. [视频点击放大](./%E8%A7%86%E9%A2%91%E7%82%B9%E5%87%BB%E6%94%BE%E5%A4%A7.md)
 1. [随机彩票](./%E9%9A%8F%E6%9C%BA%E5%BD%A9%E7%A5%A8.md)
 2. [前端SEQ方案](./%E5%89%8D%E7%AB%AFSEQ%E6%96%B9%E6%A1%88.md)
 3. [videojs-flvh265直播](./videojs-flvh265%E7%9B%B4%E6%92%AD.md)
