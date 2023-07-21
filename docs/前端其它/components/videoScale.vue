@@ -9,26 +9,6 @@ import { onMounted } from 'vue';
 <script setup lang='ts'>
 import { ref, onMounted, watch } from 'vue'
 
-const loadScript = (url: string) => {
-  return new Promise<void>((resolve, reject) => {
-    const script = document.createElement('script')
-    script.src = url
-
-    script.onload = () => {
-      resolve()
-    }
-
-    script.onerror = () => {
-      reject(new Error('Failed to load script.'))
-    }
-
-    document.head.appendChild(script)
-  })
-}
-
-loadScript('https://player.live-video.net/1.14.0/amazon-ivs-player.min.js')
-
-
 onMounted(() => {
   const videoContainer: any = document.getElementById('videoContainer');
   const video:any = document.getElementById('myVideo');
