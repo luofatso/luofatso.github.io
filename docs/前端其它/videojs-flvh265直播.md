@@ -1,5 +1,7 @@
 # live-flv-265直播
 
+公司一个管理系统使用了后端渲染，这个是给后端同学写的一个的DEMO
+
 ```
 <!DOCTYPE html>
 <html lang="en">

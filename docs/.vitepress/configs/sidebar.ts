@@ -133,6 +133,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '视频点击放大', link: '/前端其它/视频点击放大' },
     { text: '随机彩票', link: '/前端其它/随机彩票' },
     { text: '前端SEQ方案', link: '/前端其它/前端SEQ方案' },
+    { text: 'amazon-ivs-videojs-threejs广角修复', link: '/前端其它/amazon-ivs-videojs-threejs广角修复' },
     { text: 'videojs-flvh265直播', link: '/前端其它/videojs-flvh265直播' },
     {
       text: 'doT.js -- JavaScript 模板引擎使用',
