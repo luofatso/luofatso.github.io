@@ -20,6 +20,16 @@
 .vp-doc div[class*='language-']{
   overflow-y: hidden;
 }
+// 影藏代码块多一行
+.line-numbers-wrapper::before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--vp-code-block-bg);
+}
 
 /* ::-webkit-scrollbar {
   width: 8px;
