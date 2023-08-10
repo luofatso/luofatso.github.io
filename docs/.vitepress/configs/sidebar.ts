@@ -3,6 +3,17 @@ import type { DefaultTheme } from 'vitepress'
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/个人随笔/': [
     {
+      text: '梦呓',
+      // collapsible: true,
+      collapsed: true,
+      items: [
+        { text: '梦呓', link: '/个人随笔/梦呓/梦呓' },
+        { text: '窗外', link: '/个人随笔/梦呓/窗外' },
+        { text: '追光者', link: '/个人随笔/梦呓/追光者' },
+        { text: '叶子', link: '/个人随笔/梦呓/叶子' }
+      ]
+    },
+    {
       text: '星星',
       // collapsible: true,
       collapsed: true,
@@ -45,9 +56,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       // collapsible: true,
       collapsed: true,
       items: [
-        { text: '窗外', link: '/个人随笔/骚动的心/窗外' },
-        { text: '追光者', link: '/个人随笔/骚动的心/追光者' },
-        { text: '叶子', link: '/个人随笔/骚动的心/叶子' },
         { text: '随心所欲', link: '/个人随笔/骚动的心/随心所欲' },
         { text: '静馨', link: '/个人随笔/骚动的心/静馨' },
         { text: '不吵不闹', link: '/个人随笔/骚动的心/不吵不闹' },
@@ -90,7 +98,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '立方体旋转', link: '/css/立方体旋转' },
     { text: 'css自动打字器', link: '/css/css自动打字器' },
     { text: 'css loading', link: '/css/css-loading' },
-    { text: 'css画心', link: '/css/css画心' },
+    { text: 'css画心', link: '/css/css画心' }
   ],
   '/JS/': [
     { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
@@ -123,7 +131,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'vue3一些语法的使用', link: '/vue3/vue3一些语法的使用' },
     { text: 'vue3知识点巩固', link: '/vue3/vue3知识点巩固' },
     { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' },
-    { text: 'element-plus多选框', link: '/vue3/element-plus-table多选框' },
+    { text: 'element-plus多选框', link: '/vue3/element-plus-table多选框' }
   ],
   '/前端工具/': [
     { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
@@ -133,7 +141,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '视频点击放大', link: '/前端其它/视频点击放大' },
     { text: '随机彩票', link: '/前端其它/随机彩票' },
     { text: '前端SEQ方案', link: '/前端其它/前端SEQ方案' },
-    { text: 'amazon-ivs-videojs-threejs广角修复', link: '/前端其它/amazon-ivs-videojs-threejs广角修复' },
+    {
+      text: 'amazon-ivs-videojs-threejs广角修复',
+      link: '/前端其它/amazon-ivs-videojs-threejs广角修复'
+    },
     { text: 'videojs-flvh265直播', link: '/前端其它/videojs-flvh265直播' },
     {
       text: 'doT.js -- JavaScript 模板引擎使用',
@@ -148,15 +159,13 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '前端自检系列 --- 运行环境', link: '/关于工作/前端自检/运行环境' },
     { text: '前端自检系列 --- 框架和类库', link: '/关于工作/前端自检/框架和类库' },
     { text: '前端自检系列 --- 前端工程', link: '/关于工作/前端自检/前端工程' },
-    { text: '前端自检系列 --- 项目和业务', link: '/关于工作/前端自检/项目和业务' },
+    { text: '前端自检系列 --- 项目和业务', link: '/关于工作/前端自检/项目和业务' }
   ],
-  '/关于生活/':[
+  '/关于生活/': [
     {
       text: 'I Love You',
       collapsed: true,
-      items: [
-        { text: '求婚', link: '/关于生活/I love you/求婚' },
-      ]
+      items: [{ text: '求婚', link: '/关于生活/I love you/求婚' }]
     },
     {
       text: '旅行',
@@ -171,7 +180,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '锦里', link: '/关于生活/旅行/锦里' },
         { text: '练车三连', link: '/关于生活/旅行/练车三连' },
         { text: '龙泉紫霞山', link: '/关于生活/旅行/龙泉紫霞山' },
-        { text: '彭州阳平玄观竹海', link: '/关于生活/旅行/彭州阳平玄观竹海' },
+        { text: '彭州阳平玄观竹海', link: '/关于生活/旅行/彭州阳平玄观竹海' }
       ]
     },
     {
@@ -180,7 +189,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         { text: '每日一点', link: '/关于生活/生活/每日一点' },
         { text: '间隙', link: '/关于生活/生活/间隙' },
-        { text: '露台阳光', link: '/关于生活/生活/露台阳光' },
+        { text: '露台阳光', link: '/关于生活/生活/露台阳光' }
       ]
     },
     {
@@ -192,6 +201,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '倒计时查询', link: '/关于生活/小工具/date' },
         { text: '吃什么', link: '/关于生活/小工具/eat' }
       ]
-    },
-  ],
+    }
+  ]
 }
