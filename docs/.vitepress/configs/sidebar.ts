@@ -171,6 +171,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '旅行',
       collapsed: true,
       items: [
+        { text: '官塘新村', link: '/关于生活/旅行/官塘新村' },
         { text: '巴朗山', link: '/关于生活/旅行/巴朗山' },
         { text: '四姑娘山-双桥沟', link: '/关于生活/旅行/四姑娘山-双桥沟' },
         { text: '康定木格措', link: '/关于生活/旅行/康定-木格措' },
