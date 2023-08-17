@@ -7,6 +7,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       // collapsible: true,
       collapsed: true,
       items: [
+        { text: '稻香', link: '/个人随笔/梦呓/稻香' },
         { text: '梦呓', link: '/个人随笔/梦呓/梦呓' },
         { text: '窗外', link: '/个人随笔/梦呓/窗外' },
         { text: '追光者', link: '/个人随笔/梦呓/追光者' },
