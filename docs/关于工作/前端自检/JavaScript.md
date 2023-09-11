@@ -11,7 +11,7 @@ outline: [2, 3]
 
 ### 1.1 JavaScript规定了几种语言类型
 
-::: info
+::: details 参考
 JavaScript 规定了七种基本数据类型和一种复杂数据类型，共计八种语言类型。
 
 #### 基本数据类型（Primitive Data Types）：
@@ -31,7 +31,7 @@ JavaScript 规定了七种基本数据类型和一种复杂数据类型，共计
 
 ### 1.2 JavaScript对象的底层数据结构是什么
 
-::: info
+::: details 参考
 JavaScript 对象的底层数据结构通常是基于哈希表（Hash Table）或者称为散列表。哈希表是一种用于实现键值对映射关系的数据结构，其中每个键都会被哈希函数计算成一个索引，然后对应到一个存储位置，从而实现高效的查找和插入操作。
 
 :::
@@ -44,7 +44,7 @@ JavaScript 对象的底层数据结构通常是基于哈希表（Hash Table）�
 ### 1.4 JavaScript中的变量在内存中的具体存储形式
 
 
-::: info
+::: details 参考
 对于基本数据类型（如数字、字符串、布尔值等），它们的值直接存储在变量所分配的内存空间中，称为栈（stack）内存。这意味着在变量被声明和初始化时，其值直接存储在栈内存中，并且在变量被销毁（超出作用域）时，栈内存会自动释放。
 
 对于复杂数据类型（如对象、数组等），变量存储的实际是对象或数组的引用（或称为指针），而不是对象或数组的实际值。引用存储在栈内存中，而对象或数组的实际值则存储在堆（heap）内存中。堆内存是一块较大的内存区域，用于存储复杂数据类型的值。当变量被赋值为对象或数组时，实际上是将对象或数组在堆内存中的引用存储到变量的栈内存中。
@@ -76,7 +76,7 @@ let num = numObj.valueOf(); // 42，拆箱操作
 
 ### 1.6 理解值类型和引用类型
 
-:::info
+::: details 参考
 * 值类型：
 
   1. 存储在栈内存中，占用固定的内存空间。
@@ -93,10 +93,10 @@ let num = numObj.valueOf(); // 42，拆箱操作
 
 ### 1.7 null和undefined的区别
 
-::: info
+::: details 参考
 首先 Undefined 和 Null 都是基本数据类型，这两个基本数据类型分别都只有一个值，就是 undefined 和 null。
 
-undefined 代表的含义是未定义，null 代表的含义是空对象（其实不是真的对象，请看下面的注意！）。一般变量声明了但还没有定义的时候会返回 undefined，null主要用于赋值给一些可能会返回对象的变量，作为初始化。
+**undefined 代表的含义是未定义，null 代表的含义是空对象**（其实不是真的对象，请看下面的注意！）。一般变量声明了但还没有定义的时候会返回 undefined，null主要用于赋值给一些可能会返回对象的变量，作为初始化。
 
 其实 null 不是对象，虽然 typeof null 会输出 object，但是这只是 JS 存在的一个悠久 Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象，然而 null 表示为全零，所以将它错误的判断为 object 。虽然现在的内部类型判断代码已经改变了，但是对于这个 Bug 却是一直流传下来。
 
@@ -112,7 +112,7 @@ undefined 在 js 中不是一个保留字，这意味着我们可以使用 undef
 
 ### 1.8 至少可以说出三种判断JavaScript数据类型的方式，以及他们的优缺点，如何准确的判断数组类型
 
-:::info
+::: details 参考
 #### 1.typeof
 typeof 对于原始类型来说，除了 null 都可以显示正确的类型
 ```
@@ -128,7 +128,7 @@ console.log(typeof null);            // object     null 的数据类型被 typeo
 typeof 对于对象来说，除了函数都会显示 object，所以说 typeof 并不能准确判断变量到底是什么类型,所以想判断一个对象的正确类型，这时候可以考虑使用 instanceof
 
 #### 2.instanceof
-instanceof 操作符可以用来判断一个对象是否属于某个构造函数创建的实例。
+instanceof 操作符可以用来**判断一个对象是否属于某个构造函数创建的实例。**
 ```
 console.log(2 instanceof Number);                    // false
 console.log(true instanceof Boolean);                // false 
@@ -145,7 +145,7 @@ console.log({} instanceof Object);                   // true
 我们来看一下 instanceof 在MDN中的解释：instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性。其意思就是判断对象是否是某一数据类型（Array）的实例，请重点关注一下是判断一个对象是否是数据类型的实例。在这里字面量值，2， true ，'str'不是实例，所以判断值为false。
 
 #### 3.constructor
-通过判断对象的构造函数来判断其类型
+**通过判断对象的构造函数来确定其类型**
 ```
 console.log((2).constructor === Number); // true
 console.log((true).constructor === Boolean); // true
@@ -197,7 +197,7 @@ console.log(a.call(null));
 
 ### 2.1 理解原型设计模式以及JavaScript中的原型规则
 
-:::info
+::: details 参考
 在 JavaScript 中，每个对象都有一个原型（prototype）属性，它指向另一个对象，这个对象就是该对象的原型。而原型本身也可以有自己的原型，形成了一个原型链（prototype chain）。
 
 关系：instance.constructor.prototype = instance.proto
@@ -222,13 +222,138 @@ console.log(Func.prototype);//Func { name = "娃哈哈", getInfo = function() }
 
 ### 2.3 实现继承的几种方式以及他们的优缺点
 
+::: details 参考
+#### 1. 原型链继承（Prototype Inheritance）：
+
+- **优点：**
+  - 简单易懂，容易实现。
+  - 可以实现基本的继承关系。
+- **缺点：**
+  - 所有实例共享原型对象，可能导致意外的属性和方法覆盖。
+  - 不能传递参数给父类构造函数。
+  - 无法实现多继承。
+
+```
+function Parent() {
+  this.name = "Parent";
+}
+Parent.prototype.sayHello = function () {
+  console.log("Hello, " + this.name);
+};
+
+function Child() {
+  this.name = "Child";
+}
+Child.prototype = new Parent();
+```
+
+#### 2.构造函数继承（Constructor Inheritance）：
+
+- **优点：**
+  - 避免了原型链继承中的共享问题。
+  - 可以传递参数给父类构造函数。
+- **缺点：**
+  - 无法继承父类原型上的方法。
+  - 每个子类实例都有自己的一份父类的属性副本，可能浪费内存。
+```
+function Parent(name) {
+  this.name = name || "Parent";
+}
+
+function Child(name) {
+  Parent.call(this, name);
+  this.childProp = "Child";
+}
+```
+
+#### 3.组合继承（Combination Inheritance）：
+
+- **优点：**
+  - 同时使用构造函数继承和原型链继承的优点。
+  - 可以继承父类的属性和方法，也可以传递参数给父类构造函数。
+- **缺点：**
+  - 调用了两次父类构造函数，可能导致性能问题和不必要的属性复制。
+```
+function Parent(name) {
+  this.name = name || "Parent";
+}
+Parent.prototype.sayHello = function () {
+  console.log("Hello, " + this.name);
+};
+
+function Child(name) {
+  Parent.call(this, name);
+  this.childProp = "Child";
+}
+Child.prototype = new Parent();
+```
+
+#### 4.原型式继承（Prototypal Inheritance）：
+
+- **优点：**
+  - 简单，可以通过现有对象创建新对象。
+- **缺点：**
+  - 共享原型，可能会导致属性和方法污染。
+```
+var parent = {
+  name: "Parent",
+  sayHello: function () {
+    console.log("Hello, " + this.name);
+  },
+};
+
+var child = Object.create(parent);
+child.name = "Child";
+```
+#### 5.寄生式继承（Parasitic Inheritance）：
+
+- **优点：**
+  - 可以在不修改原对象的情况下扩展它。
+- **缺点：**
+  - 可能难以维护，不够清晰。
+```
+function createChild(parent) {
+  var child = Object.create(parent);
+  child.name = "Child";
+  return child;
+}
+```
+
+#### 6.寄生组合式继承（Parasitic Combination Inheritance）：
+
+- **优点：**
+  - 避免了组合继承中调用两次父类构造函数的问题。
+  - 继承父类的属性和方法，同时不会共享原型。
+**缺点：**
+  - 相对复杂。
+```
+function inherit(child, parent) {
+  var prototype = Object.create(parent.prototype);
+  prototype.constructor = child;
+  child.prototype = prototype;
+}
+function Parent(name) {
+  this.name = name || "Parent";
+}
+Parent.prototype.sayHello = function () {
+  console.log("Hello, " + this.name);
+};
+
+function Child(name) {
+  Parent.call(this, name);
+  this.childProp = "Child";
+}
+inherit(Child, Parent);
+```
+:::
+
 
 ### 2.4 至少说出一种开源项目(如Node)中应用原型继承的案例
 
 
 ### 2.5 可以描述new一个对象的详细过程，手动实现一个new操作符
 
-::: info
+::: details 参考
 1. 创建空对象；
 var obj = {};
 2. 将这个空对象的原型指向构造函数的 `prototype` 属性；
@@ -260,15 +385,20 @@ var person1 = new Person("Alice", 25);
 
 
 ### 2.7 理解es6 class构造以及继承的底层实现原理
-- Promise
 
-一句话概括Promise：Promise对象用于异步操作，它表示一个尚未完成且预计在未来完成的异步操作。
+::: details 参考
+#### 1. Promise
+
+一句话概括Promise：Promise对象**用于异步操作，它表示一个尚未完成且预计在未来完成的异步操作**。
 promise是用来解决两个问题的：
 
-回调地狱，代码难以维护，常常第一个的函数的输出是第二个函数的输入这种现象
-promise可以支持多个并发的请求，获取并发请求中的数据
+**回调地狱**：避免了嵌套过多的回调函数，提高了代码的可读性和可维护性。
+
+**并行和错误处理**： 使得并行执行多个异步操作和处理错误变得更加容易，同时允许将多个Promise的结果组合起来进行处理。
 
 这个promise可以解决异步的问题，本身不能说promise是异步的
+
+**Promise有三种状态：等待（pending）、已完成（fulfilled）、已拒绝（rejected），分别表示异步操作的不同阶段。**
 
 ```
 /*Promise 的简单实现*/
@@ -310,30 +440,44 @@ class MyPromise {
 }
 ```
 
-- async/await
+一些方法：
+- Promise.all()用于将多个Promise合并成一个新的Promise，关注的是**等待所有Promise都成功完成**
+- Promise.allSettled()用于将多个Promise合并成一个新的Promise，关注的是**等待所有Promise都完成，不论成功或失败。**
+- Promise.race()用于将多个Promise合并成一个新的Promise，关注的是**第一个完成的Promise**，不论是成功还是失败。它会返回第一个完成的Promise的状态（值或原因）。
+- Promise.any()用于将多个Promise合并成一个新的Promise，关注的是**第一个成功完成的Promise**。只有当第一个成功的Promise完成时，它才会返回第一个成功的Promise的状态（值）。
+
+
+#### 2.async/await
+
+一种用于处理异步操作的语法糖，它**使异步编程更加清晰和易于理解**。async用于定义一个异步函数，而await用于暂停异步函数的执行，等待一个Promise解决（变为fulfilled）并返回其结果，然后继续执行后续代码。
+
+- **拓展**
+  - async/await 可以看作是 Generator 的语法糖，因为它们都是用于处理异步操作的工具，但 async/await 提供了更简洁和更易读的语法。这是因为 async/await 建立在 Generator 的基础上，并对其进行了改进，使异步代码看起来更像同步代码。
+  - async/await 也可以看作是建立在 Promise 之上的语法糖，因为它是通过 Promise 来管理异步操作的。async/await 提供了一种更清晰、更同步化的方式来编写异步代码，将异步操作和错误处理看起来更像同步代码。
+
+#### 3.class 
+class语法提供了**一种更简洁和面向对象的方式来定义对象构造函数和继承**。底层实现原理涉及了JavaScript中的**原型链**，提供了一种更面向对象的语法糖，使得对象构造和继承更加清晰和易于使用。
+:::
 
 ## 3 作用域和闭包
 
 
-### 3.1 理解词法作用域和动态作用域
+### 3.1 理解词法（静态）作用域和动态作用域
 
-作用域： 作用域是定义变量的区域，它有一套访问变量的规则，这套规则来管理浏览器引擎如何在当前作用域以及嵌套的作用域中根据变量（标识符）进行变量查找。
-
-作用域链： 作用域链的作用是保证对执行环境有权访问的所有变量和函数的有序访问，通过作用域链，我们可以访问到外层环境的变量和
-函数。
+静态作用域：JavaScript 使用的是静态作用域，也被称为词法作用域。词法作用域是**在代码编写阶段确定的，变量作用域由其定义位置决定。**
+动态作用域：动态作用域是在运行时根据函数调用链确定的，变量作用域由调用顺序决定。
 
 
 ### 3.2 理解JavaScript的作用域和作用域链
 
-作用域： 作用域是定义变量的区域，它有一套访问变量的规则，这套规则来管理浏览器引擎如何在当前作用域以及嵌套的作用域中根据变量（标识符）进行变量查找。
+作用域：**定义了变量、函数及对象在代码中的可见性和访问范围**在 JavaScript 中，有全局作用域和局部作用域之分。全局作用域中声明的变量可以在整个脚本中访问，而局部作用域中声明的变量只能在其所在的函数或代码块中访问。ES6 引入的 let 和 const 关键字还引入了块级作用域。
+
 
 作用域链： 作用域链的作用是保证对执行环境有权访问的所有变量和函数的有序访问，通过作用域链，我们可以访问到外层环境的变量和函数。
 
 作用域链的本质上是一个指向变量对象的指针列表。变量对象是一个包含了执行环境中所有变量和函数的对象。作用域链的前端始终都是当前执行上下文的变量对象。全局执行上下文的变量对象（也就是全局对象）始终是作用域链的最后一个对象。
 
 当我们查找一个变量时，如果当前执行环境中没有找到，我们可以沿着作用域链向后查找。
-
-作用域链的创建过程跟执行上下文的建立有关....
 
 ### 3.3 理解JavaScript的执行上下文栈，可以应用堆栈信息快速定位问题
 
@@ -395,12 +539,37 @@ apply、call、bind都是js给函数内置的一些API，调用他们可以为�
 
 
 ### 4.1 为何try里面放return，finally还会执行，理解其内部机制
+::: details 参考
+当try块中包含return语句时，finally块依然会执行，因为finally块的主要目的是在退出try块**时执行必要的清理工作，而不仅仅是处理异常**。
 
+理解其内部机制的关键点是：finally块中的代码是在try块执行完成后（包括正常执行和异常处理）立即执行的，然后才会将函数的返回值传递出去。
+:::
 
-### 4.2 JavaScript如何实现异步编程，可以详细描述EventLoop机制
+### 4.2 JavaScript如何实现异步编程，可以详细描述EventLoop(事件循环)机制
+::: details 参考
 
+JavaScript事件循环（Event Loop）是JavaScript运行环境（浏览器或Node.js）中处理异步任务的机制。
+
+事件循环的核心是一个事件队列，它存储待处理的事件或任务。当事件循环开始时，它会从事件队列中取出最先进入队列的事件，并执行相关的回调函数。如果事件队列中有多个事件，事件循环会按照顺序逐一取出并执行，直到队列为空。
+
+除了事件队列外，事件循环还包括以下几个重要的组件：
+
+- 宏任务队列：存储宏任务（MacroTask），例如setTimeout、setInterval、I/O操作等。
+- 微任务队列：存储微任务（MicroTask），例如Promise、process.nextTick等。
+- 当前正在执行的任务：即执行栈中的任务，通常为当前执行的回调函数。
+
+**事件循环的执行顺序如下：**
+
+1. 执行当前执行栈中的任务，直到执行栈为空。
+2. 执行微任务队列中的所有任务，直到队列为空。
+3. 取出宏任务队列中最先进入队列的任务，执行其相关回调函数。
+4. 重复执行上述步骤，直到宏任务队列和微任务队列都为空。
+
+:::
 
 ### 4.3 宏任务和微任务分别有哪些
+
+略~~~
 
 
 ### 4.4 可以快速分析一个复杂的异步嵌套逻辑，并掌握分析方法
@@ -408,6 +577,7 @@ apply、call、bind都是js给函数内置的一些API，调用他们可以为�
 
 ### 4.5 使用Promise实现串行
 
+略~~~
 
 ### 4.6 Node与浏览器EventLoop的差异
 
@@ -469,6 +639,34 @@ apply、call、bind都是js给函数内置的一些API，调用他们可以为�
 
 ### 5.7 JavaScript异常处理的方式，统一的异常处理方案
 
+::: details 参考
+1. try...catch 语句
+```
+try {
+  // 可能引发异常的代码
+} catch (error) {
+  // 处理异常的代码
+}
+```
+2. 全局错误事件监听器
+```
+window.addEventListener("error", function (event) {
+  // 处理未捕获的全局错误
+  console.error("Global error:", event.error);
+});
+```
+3. Promise 错误处理：
+```
+somePromiseFunction()
+  .then(result => {
+    // 处理成功情况
+  })
+  .catch(error => {
+    // 处理错误情况
+  });
+```
+:::
+
 ### 5.8 数组常用方法
 
 ```
@@ -497,25 +695,53 @@ includes() 查找数组是否包含某个元素 返回值: 返回布尔
 
 ### 5.9 数组扁平化、去重、乱序
 
-### JS事件循环
+::: details 参考
+#### 1.扁平化
+- 递归方法
+- Array.prototype.flat() Infinity
+- Array.prototype.reduce()
+#### 2.去重
+- 对象属性的唯一性
+- 递归
+- indexOf
+- includes
+- 使用Set：
+```
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = [...new Set(array)];
+console.log(uniqueArray); // 输出：[1, 2, 3, 4, 5]
+```
+- 使用filter方法：
+```
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = array.filter((value, index, self) => {
+  return self.indexOf(value) === index;
+});
+console.log(uniqueArray); // 输出：[1, 2, 3, 4, 5]
 
-::: info
-
-JavaScript事件循环（Event Loop）是JavaScript运行环境（浏览器或Node.js）中处理异步任务的机制。
-
-事件循环的核心是一个事件队列，它存储待处理的事件或任务。当事件循环开始时，它会从事件队列中取出最先进入队列的事件，并执行相关的回调函数。如果事件队列中有多个事件，事件循环会按照顺序逐一取出并执行，直到队列为空。
-
-除了事件队列外，事件循环还包括以下几个重要的组件：
-
-- 宏任务队列：存储宏任务（MacroTask），例如setTimeout、setInterval、I/O操作等。
-- 微任务队列：存储微任务（MicroTask），例如Promise、process.nextTick等。
-- 当前正在执行的任务：即执行栈中的任务，通常为当前执行的回调函数。
-
-**事件循环的执行顺序如下：**
-
-1. 执行当前执行栈中的任务，直到执行栈为空。
-2. 执行微任务队列中的所有任务，直到队列为空。
-3. 取出宏任务队列中最先进入队列的任务，执行其相关回调函数。
-4. 重复执行上述步骤，直到宏任务队列和微任务队列都为空。
-
+```
+- 使用reduce方法：
+```
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = array.reduce((accumulator, currentValue) => {
+  if (!accumulator.includes(currentValue)) {
+    accumulator.push(currentValue);
+  }
+  return accumulator;
+}, []);
+console.log(uniqueArray); // 输出：[1, 2, 3, 4, 5]
+```
+- 使用indexOf方法
+```
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = [];
+for (let i = 0; i < array.length; i++) {
+  if (uniqueArray.indexOf(array[i]) === -1) {
+    uniqueArray.push(array[i]);
+  }
+}
+console.log(uniqueArray); // 输出：[1, 2, 3, 4, 5]
+```
 :::
+
+
