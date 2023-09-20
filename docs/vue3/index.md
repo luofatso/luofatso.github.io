@@ -10,3 +10,4 @@
 4. [vue3知识点巩固](./vue3%E7%9F%A5%E8%AF%86%E7%82%B9%E5%B7%A9%E5%9B%BA.md)
 5. [vue3中mitt的使用](./vue3%E4%B8%ADmitt%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 5. [element-plus多选框](./element-plus-table%E5%A4%9A%E9%80%89%E6%A1%86.md)
+5. [element-plus-select自定义指令下拉加载更多](./element-plus-select自定义指令下拉加载更多.md)
