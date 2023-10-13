@@ -11,3 +11,4 @@
 5. [vue3中mitt的使用](./vue3%E4%B8%ADmitt%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 5. [element-plus多选框](./element-plus-table%E5%A4%9A%E9%80%89%E6%A1%86.md)
 5. [element-plus-select自定义指令下拉加载更多](./element-plus-select自定义指令下拉加载更多.md)
+5. [首屏动画](./首屏动画.md)
