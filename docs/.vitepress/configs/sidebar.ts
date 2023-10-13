@@ -133,12 +133,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'vue3知识点巩固', link: '/vue3/vue3知识点巩固' },
     { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' },
     { text: 'element-plus多选框', link: '/vue3/element-plus-table多选框' },
-    { text: 'element-plus-select自定义指令下拉加载更多', link: '/vue3/element-plus-select自定义指令下拉加载更多' },
+    {
+      text: 'element-plus-select自定义指令下拉加载更多',
+      link: '/vue3/element-plus-select自定义指令下拉加载更多'
+    },
     { text: '首屏动画', link: '/vue3/首屏动画' }
   ],
   '/前端工具/': [
     { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
-    { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' }
+    { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' },
+    { text: 'cloc 计算代码行数', link: '/前端工具/cloc 计算代码行数' },
+    { text: 'pnpm -- 相关', link: '/前端工具/pnpm -- 相关' }
   ],
   '/前端其它/': [
     { text: '视频点击放大', link: '/前端其它/视频点击放大' },
