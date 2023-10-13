@@ -78,8 +78,8 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/前端其它/'
       },
       {
-        text: '总结',
-        link: '/项目总结/'
+        text: '关于项目',
+        link: '/前端项目/'
       }
     ]
   }
