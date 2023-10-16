@@ -19,7 +19,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { getRandom } from '../../../../../utils/util'
+import { getRandom } from '../../../../utils/util'
 import { ref } from 'vue'
 
 let eatFlagIndex = 1

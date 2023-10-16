@@ -13,7 +13,7 @@
 </template>
 <script setup lang='ts'>
 import OneDay2023 from './OneDay2023'
-import { getRandom } from '../../../../../utils/util'
+import { getRandom } from '../../../../utils/util'
 
 const OneDayAll = OneDay2023.reverse()
 
