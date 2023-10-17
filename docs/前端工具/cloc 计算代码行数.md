@@ -13,3 +13,9 @@ git log --pretty=tformat: --numstat | awk ' { add += $1; subs += $2; loc += $1 -
 ```
 
 [工具链接](https://github.com/kentcdodds/cloc#readme)
+
+## 查找大文件
+
+```
+git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -15 | awk '{print$1}')"
+```
