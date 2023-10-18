@@ -1,8 +1,8 @@
 <template>
   <div class="countdown" v-html="count?.format(format)"></div>
-  <p>{{ count?.format('D 天 HH 时 mm 分 ss 秒') }}=</p>
-  <p>{{ count?.format('DD : HH : mm : ss') }}-</p>
-  <p>{{ count?.format('HH-mm-ss') }}!</p>
+  <p>{{ count?.format('D 天 HH 时 mm 分 ss 秒') }}</p>
+  <p>{{ count?.format('DD : HH : mm : ss') }}</p>
+  <p>{{ count?.format('HH-mm-ss') }}</p>
   <div class="countdown">
     使用取值方法：
     <span>{{ count?.hours() }}</span>
@@ -41,13 +41,26 @@ const countdown = () => {
   return duration
 }
 
+
+const updateMilliseconds = () => {
+  count.value = countdown()
+  requestAnimationFrame(updateMilliseconds)
+};
+
 // 使用定时器更新倒计时
 onMounted(() => {
-  setInterval(() => {
-    count.value = countdown();
-  }, 1000);
+  updateMilliseconds()
 });
 </script>
-<style lang='scss' scoped>
-  
+<style lang='scss'>
+.countdown span {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0 4px;
+  min-width: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  background: var(--c-blue);
+}
 </style>

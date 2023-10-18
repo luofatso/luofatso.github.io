@@ -8,3 +8,5 @@
 2. [nvm -- windows管理node](./nvm%20--%20windows管理node.md)
 3. [cloc 计算代码行数](./cloc%20计算代码行数.md)
 4. [pnpm相关](./pnpm%20--%20相关.md)
+5. [vscode常用插件](./vscode常用插件.md)
+6. [dayjs使用](./dayjs使用.md)

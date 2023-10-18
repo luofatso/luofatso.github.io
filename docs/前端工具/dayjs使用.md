@@ -4,7 +4,7 @@
 
 # Day.js 使用
 
-Day.js 是一个轻量的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持完全一样。
+`Day.js` 是一个轻量的处理时间和日期的 `JavaScript` 库，和 `Moment.js` 的 `API` 设计保持完全一样。
 
 - [Day.js | Github](https://github.com/iamkun/dayjs)
 - [Day.js | 文档-英文](https://day.js.org/docs/en/installation/installation)
@@ -71,11 +71,12 @@ dayjs('2010-10-20').isBetween('2000-10-10', dayjs('2020-10-30')) // 默认毫秒
 dayjs().isBetween('2000-10-10', '2020-10-10', 'month') 
 ```
 
-## 倒计时
+## 实战倒计时
 
 需要使用 [duration 插件 ](https://day.js.org/docs/zh-CN/plugin/duration#docsNav) 用于将时间差转换为 `Day.js` 对象
 
-```js
+::: code-group
+```js[js]
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 
@@ -99,5 +100,46 @@ const countdown = () => {
 // 使用定时器更新倒计时
 setInterval(countdown, 1000)
 ```
+```vue[vue]
+<script setup>
+const format = '[<span>]HH[</span>] 时 [<span>]mm[</span>] 分 [<span>]ss[</span>] 秒'
+</script>
+
+<template>
+  <div class="countdown" v-html="count.format(format)"></div>
+  {{ count.format('D 天 HH 时 mm 分 ss 秒') }}
+  {{ count.format('DD : HH : mm : ss') }}
+  {{ count.format('HH-mm-ss') }}
+  <div class="countdown">
+    使用取值方法：
+    <span>{{ count.hours() }}</span>
+    时
+    <span>{{ count.minutes() }}</span>
+    分
+    <span>{{ count.seconds() }}</span>
+    秒
+    <span>{{ count.milliseconds() }}</span>
+  </div>
+</template>
+```
 
 <DayDuration />
+
+:::
+
+::: tip 优势
+- 使用 `Day.js` 对象的 `format` 方法进行格式化
+  - 无需自己实现格式化函数
+  - 个位数时都不需要字符串补位操作
+  - 在使用 `format` 时，在方括号中的字符不会被格式化替换
+- 兼容性良好
+:::
+
+::: warning 缺点
+当需求场景超出 `Day.js` 对象的 `format` 方法的能力时（即不是标准的年月日时分秒格式）需要自己实现格式化函数
+- 40 天 13 时 14 分 00 秒
+- 52 时 13 分 14 秒
+- 100 分 50 秒
+:::
+
+- [实战参考](https://notes.fe-mm.com/workflow/library/dayjs)

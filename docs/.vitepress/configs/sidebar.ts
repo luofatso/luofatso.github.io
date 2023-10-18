@@ -143,7 +143,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
     { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' },
     { text: 'cloc 计算代码行数', link: '/前端工具/cloc 计算代码行数' },
-    { text: 'pnpm -- 相关', link: '/前端工具/pnpm -- 相关' }
+    { text: 'pnpm -- 相关', link: '/前端工具/pnpm -- 相关' },
+    { text: 'vscode常用插件', link: '/前端工具/vscode常用插件' },
+    { text: 'dayjs使用', link: '/前端工具/dayjs使用' }
   ],
   '/前端其它/': [
     { text: '视频点击放大', link: '/前端其它/视频点击放大' },
