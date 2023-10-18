@@ -19,9 +19,6 @@ import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 import { ref, onMounted } from 'vue'
 
-const format = '[<span>]HH[</span>] 时 [<span>]mm[</span>] 分 [<span>]ss[</span>] 秒'
-const count = ref(null)
-
 // 配置 duration 插件
 dayjs.extend(duration)
 
@@ -41,6 +38,8 @@ const countdown = () => {
   return duration
 }
 
+const format = '[<span>]HH[</span>] 时 [<span>]mm[</span>] 分 [<span>]ss[</span>] 秒'
+const count = ref<any>(null)
 
 const updateMilliseconds = () => {
   count.value = countdown()

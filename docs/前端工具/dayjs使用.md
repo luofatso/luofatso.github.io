@@ -1,8 +1,4 @@
-<script setup lang='ts'>
-  import DayDuration from './components/DayDuration.vue'
-</script>
-
-# Day.js 使用
+# Day.js的使用
 
 `Day.js` 是一个轻量的处理时间和日期的 `JavaScript` 库，和 `Moment.js` 的 `API` 设计保持完全一样。
 
@@ -12,24 +8,28 @@
 
 ## 安装
 
-:::code-group
-```npm [npm]
+::: code-group
+
+``` npm [npm]
 npm install dayjs
 ```
-```yarn [yarn]
+
+``` yarn [yarn]
 yarn add dayjs
 ```
-```pnpm [pnpm]
+
+``` pnpm [pnpm]
 pnpm add dayjs
 ```
-```cdn [cdn]
+
+``` cdn [cdn]
 <script src="https://unpkg.com/dayjs"></script>
 ```
 :::
 
 ## 创建
 
-```
+``` js
 dayjs() // 当前时间 Tue Dec 12 2000 00:00:00 GMT+0800
 dayjs('2000-12-12') // 2000-12-12
 dayjs(Date.now() + 24 * 60 * 60 * 1000) // 明天
@@ -37,7 +37,7 @@ dayjs(Date.now() + 24 * 60 * 60 * 1000) // 明天
 
 ## 显示
 
-```
+``` js
 dayjs('2000-01-01').valueOf() // 返回当前实例的 UNIX 时间戳，13位数字，毫秒
 dayjs('2000-01-01').unix() // 返回当前实例的 UNIX 时间戳，10位数字，秒
 dayjs().format('YYYY-MM-DD HH:mm:ss') // 格式化时间 2000-12-12 00:00:00
@@ -47,7 +47,7 @@ dayjs('2000-01-01').daysInMonth() // 获取当前月份包含的天数
 
 ## 操作
 
-```
+``` js
 dayjs().subtract(7, 'days') // 7天后
 dayjs().add(7, 'days') // 7天前
 dayjs().subtract(1, 'months') // 上个月
@@ -58,7 +58,7 @@ dayjs().endOf('year') // 获取一年年末
 
 ## 查询
 
-```
+``` js
 dayjs().isLeapYear() // 当前年份是否是闰年
 dayjs('2000-01-01').isLeapYear() // 指定年份是否是闰年
 dayjs('2000-01-01').isBefore('2000-01-02') // 是否在另一个提供的日期时间之前
@@ -76,7 +76,8 @@ dayjs().isBetween('2000-10-10', '2020-10-10', 'month')
 需要使用 [duration 插件 ](https://day.js.org/docs/zh-CN/plugin/duration#docsNav) 用于将时间差转换为 `Day.js` 对象
 
 ::: code-group
-```js[js]
+
+``` js[js]
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 
@@ -100,7 +101,8 @@ const countdown = () => {
 // 使用定时器更新倒计时
 setInterval(countdown, 1000)
 ```
-```vue[vue]
+
+``` vue[vue]
 <script setup>
 const format = '[<span>]HH[</span>] 时 [<span>]mm[</span>] 分 [<span>]ss[</span>] 秒'
 </script>
@@ -122,10 +124,13 @@ const format = '[<span>]HH[</span>] 时 [<span>]mm[</span>] 分 [<span>]ss[</spa
   </div>
 </template>
 ```
+:::
+
+<script setup lang='ts'>
+  import DayDuration from './components/DayDuration.vue'
+</script>
 
 <DayDuration />
-
-:::
 
 ::: tip 优势
 - 使用 `Day.js` 对象的 `format` 方法进行格式化
