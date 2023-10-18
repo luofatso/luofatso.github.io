@@ -14,6 +14,9 @@ devDependencies:
   dayjs:
     specifier: ^1.11.7
     version: 1.11.7
+  duration:
+    specifier: link:dayjs/plugin/duration
+    version: link:dayjs/plugin/duration
   js-calendar-converter:
     specifier: ^0.0.4
     version: 0.0.4
