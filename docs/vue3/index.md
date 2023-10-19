@@ -4,6 +4,7 @@
 
 ## 目录
 
+1. [vue3弹幕](./vue3弹幕.md)
 1. [pinia使用](./pinia%E4%BD%BF%E7%94%A8.md)
 2. [vue3好用的插件记录](./vue3%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95.md)
 3. [vue3一些语法的使用](./vue3%E4%B8%80%E4%BA%9B%E8%AF%AD%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8.md)
