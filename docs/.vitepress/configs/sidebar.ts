@@ -89,6 +89,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '玩转CSS', link: '/css/玩转CSS' },
     { text: 'css按钮带五角星', link: '/css/css按钮带五角星' },
     { text: 'css文字渐变', link: '/css/css文字渐变' },
+    { text: 'css画正方形', link: '/css/css画正方形' },
     { text: 'css画三角形', link: '/css/css画三角形' },
     { text: 'css超出省略', link: '/css/css超出省略' },
     { text: 'grid布局', link: '/css/grid布局' },
