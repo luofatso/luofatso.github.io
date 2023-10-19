@@ -1,6 +1,6 @@
 ---
 # layout: home
-layout: Layout
+# layout: Layout
 layoutClass: nav-layout
 outline: [2, 3, 4]
 lastUpdated: false
@@ -12,7 +12,7 @@ lastUpdated: false
 一些实用网站快速导航
 
 
-<script setup>
+<script setup lang='ts'>
 import NavPage from './components/NavPage/nav.vue'
 </script>
 

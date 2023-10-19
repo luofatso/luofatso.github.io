@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
@@ -28,7 +29,7 @@
     "js-calendar-converter": "^0.0.4",
     "sass": "^1.58.3",
     "valine": "^1.5.1",
-    "vitepress": "1.0.0-alpha.48",
+    "vitepress": "1.0.0-rc.22",
     "vue": "^3.2.47"
   },
   "prettier": "@femm/prettier"
