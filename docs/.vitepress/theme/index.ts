@@ -4,17 +4,28 @@ import DefaultTheme from 'vitepress/theme'
 import MyLayout from './MyLayout.vue'
 import './var.scss'
 
-export default Object.assign({}, DefaultTheme, {
-  Layout: () => {
-    const props: Record<string, any> = {}
-    // 获取 frontmatter
-    const { frontmatter } = useData()
+// import vuetify from './vuetify'
 
-    /* 添加自定义 class */
-    if (frontmatter.value?.layoutClass) {
-      props.class = frontmatter.value.layoutClass
-    }
+export default Object.assign(
+  {},
+  {
+    ...DefaultTheme,
+    // enhanceApp: async ({ app }: any) => {
+    //   app.use(vuetify)
+    // },
+  },
+  {
+    Layout: () => {
+      const props: Record<string, any> = {}
+      // 获取 frontmatter
+      const { frontmatter } = useData()
 
-    return h(MyLayout, props)
-  }
-})
+      /* 添加自定义 class */
+      if (frontmatter.value?.layoutClass) {
+        props.class = frontmatter.value.layoutClass
+      }
+
+      return h(MyLayout, props)
+    },
+  },
+)
