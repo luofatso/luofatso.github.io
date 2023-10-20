@@ -6,6 +6,9 @@ import './var.scss'
 
 // import vuetify from './vuetify'
 
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
 export default Object.assign(
   {},
   {
@@ -13,6 +16,13 @@ export default Object.assign(
     // enhanceApp: async ({ app }: any) => {
     //   app.use(vuetify)
     // },
+    enhanceApp: async ({ app }: any) => {
+      // app is the Vue 3 app instance from `createApp()`. router is VitePress'
+      // custom router. `siteData`` is a `ref`` of current site-level metadata.
+      import("element-plus").then((module) => {
+        app.use(module);
+      });
+    },
   },
   {
     Layout: () => {
