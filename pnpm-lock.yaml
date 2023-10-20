@@ -11,6 +11,9 @@ devDependencies:
   '@mdit-vue/shared':
     specifier: ^0.12.0
     version: 0.12.1
+  '@vueuse/core':
+    specifier: ^10.5.0
+    version: 10.5.0(vue@3.3.4)
   dayjs:
     specifier: ^1.11.7
     version: 1.11.10

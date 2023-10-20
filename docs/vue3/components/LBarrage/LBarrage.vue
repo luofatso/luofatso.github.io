@@ -21,7 +21,7 @@
             @animationend="barrageAnimationEnd(it.row, it.col)"
           >
             <template v-if="it.actionType?.length">
-              <div class="ani-box">这里应该是动画111</div>
+              <div class="ani-box">这里是其他动画礼物之类的，有机会在搞</div>
               <!-- <l-avatar :avatar="it.avatar" :size="30" c/lass="ml-10" /> -->
             </template>
             <span v-else>{{ it.text }}</span>
@@ -36,9 +36,10 @@
 // import 'vue3-lottie/dist/style.css'
 // import { useAppStore } from '@/store'
 // import getChatActionHooks from '@/hooks/getChatActionHooks'
-import { ref, watch, onMounted, onBeforeUnmount, defineExpose } from 'vue'
+import { ref, watch, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 type Props = {
+  full: boolean // 视频是否全屏
   arr: any // 弹幕源数组
   isPause: boolean // 弹幕是否暂停状态
   percent?: number // 弹幕占比
@@ -60,9 +61,10 @@ type BarrageType = {
 // const appStore = useAppStore()
 const props = withDefaults(defineProps<Props>(), {
   percent: 80,
+  full: false,
 })
 
-const CHANNEL_COUNT = 3 // 行数
+const CHANNEL_COUNT = 5 // 行数
 const MAX_DM_COUNT = 10 // 每行弹幕数最大值
 const INTER_VAL_TIME = 100 // 取弹幕时间间隔
 // const USER_ID = appStore.userInfo.id
@@ -120,9 +122,7 @@ const init = () => {
   }
 }
 
-/**
- * 获取一个可以发射弹幕的通道 没有则返回-1
- */
+// 获取一个可以发射弹幕的通道 没有则返回-1
 const getChannel = () => {
   for (let i = 0; i < CHANNEL_COUNT; i += 1) {
     if (hasPosition.value[i] && domPool.value[i].length) return i
@@ -130,10 +130,8 @@ const getChannel = () => {
   return -1
 }
 
-/**
- * 根据DOM和弹幕信息 发射弹幕
- */
-const shootDanmu = (domItem: BarrageType, dmItem: any, channel: number) => {
+// 根据DOM和弹幕信息 发射弹幕
+const shootBarrage = (domItem: BarrageType, dmItem: any, channel: number) => {
   hasPosition.value[channel] = false
 
   const { sender = null, isSelf, content, actionType = '' } = dmItem
@@ -141,7 +139,6 @@ const shootDanmu = (domItem: BarrageType, dmItem: any, channel: number) => {
 
   // 设置当前通道为false
   thatBarrage.isFree = true
-
   thatBarrage.avatar = sender?.avatar || ''
   thatBarrage.actionType = actionType
   thatBarrage.isSelf = isSelf
@@ -161,7 +158,7 @@ const getFreeChannelDom = (channel: number) => {
 }
 
 // 暂停弹幕
-const pauseDm = () => {
+const pauseBarrage = () => {
   if (intervalDM.value) {
     clearInterval(intervalDM.value)
     intervalDM.value = null
@@ -169,18 +166,17 @@ const pauseDm = () => {
 }
 
 // 播放弹幕
-const playDm = () => {
+const playBarrage = () => {
   // 每隔1ms从弹幕池里获取弹幕（如果有的话）并发射
   intervalDM.value = setInterval(() => {
     // 更新逻辑
     if (barrages.value.length > 0) {
       let channel
       const barrage = barrages.value.shift()
-      // eslint-disable-next-line no-cond-assign
       if (barrage.direction === 'default' && (channel = getChannel()) !== -1) {
         const domItem = getFreeChannelDom(channel)
         if (domItem) {
-          shootDanmu(domItem, barrage, channel)
+          shootBarrage(domItem, barrage, channel)
         } else {
           barrages.value.unshift(barrage)
         }
@@ -194,10 +190,10 @@ const playDm = () => {
 // const visibilitychangeFn = () => {
 //   if (!document.hidden) {
 //     // 处于当前页面
-//     playDm()
-//     // console.log('进入页面')
+//     playBarrage()
+//     console.log('进入页面')
 //   } else {
-//     // console.log('离开页面')
+//     console.log('离开页面')
 //     clearInterval(intervalDM.value)
 //     intervalDM.value = null
 //   }
@@ -205,9 +201,11 @@ const playDm = () => {
 
 const addBarrage = (res: any) => {
   const obj: any = { ...res, content: res.message, direction: 'default' }
+  // 动画弹幕
   if (obj.type === 'INTERACTION') {
     // obj.actionType = isLove(res.message) ? 'LOVE' : 'GOOD'
   }
+  // 是否为本人所发
   if (res.senderId === USER_ID) {
     if (barrages.value.length) {
       barrages.value.unshift({
@@ -225,22 +223,42 @@ const addBarrage = (res: any) => {
   }
 }
 
+// 设置弹幕卡槽长度
+const setBarrageWidth = () => {
+  nextTick(() => {
+    barMainWidth.value = barrageWrapperRef.value?.offsetWidth
+  })
+}
+
 watch(
   () => props.isPause,
   (val) => {
     // eslint-disable-next-line no-unused-expressions
-    val ? pauseDm() : playDm()
+    val ? pauseBarrage() : playBarrage()
+  },
+)
+
+watch(
+  () => props.full,
+  () => {
+    setBarrageWidth()
   },
 )
 
 onMounted(() => {
   // 初始化弹幕dom组
   init()
+
   // 开始播放弹幕
-  playDm()
+  playBarrage()
+
+  // 弹幕卡槽长度
+  setBarrageWidth()
+
   // 注册页面监听器
   // document.addEventListener('visibilitychange', visibilitychangeFn)
 })
+
 
 onBeforeUnmount(() => {
   // document.removeEventListener('visibilitychange', visibilitychangeFn)
@@ -252,10 +270,10 @@ defineExpose({
   addBarrage,
 })
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .barrage-wrapper {
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   left: 0px;
   top: 30px;
