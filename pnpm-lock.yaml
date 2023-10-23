@@ -26,6 +26,9 @@ devDependencies:
   js-calendar-converter:
     specifier: ^0.0.4
     version: 0.0.4
+  qrcode.vue:
+    specifier: ^3.4.1
+    version: 3.4.1(vue@3.3.4)
   sass:
     specifier: ^1.58.3
     version: 1.69.4
@@ -38,6 +41,9 @@ devDependencies:
   vue:
     specifier: ^3.2.47
     version: 3.3.4
+  vue3-print-nb:
+    specifier: ^0.1.4
+    version: 0.1.4
 
 packages:
 
@@ -1646,6 +1652,14 @@ packages:
       yargs: 3.32.0
     dev: true
 
+  /qrcode.vue@3.4.1(vue@3.3.4):
+    resolution: {integrity: sha512-wq/zHsifH4FJ1GXQi8/wNxD1KfQkckIpjK1KPTc/qwYU5/Bkd4me0w4xZSg6EXk6xLBkVDE0zxVagewv5EMAVA==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.4
+    dev: true
+
   /qs@6.11.2:
     resolution: {integrity: sha512-tDNIz22aBzCDxLtVH++VnTfzxlfeK5CbqohpSqpJgj1Wg/cQbStNAz3NuqCs5vV+pjBsK4x4pN9HlVh7rcYRiA==}
     engines: {node: '>=0.6'}
@@ -1999,6 +2013,12 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
+    dependencies:
+      vue: 3.3.4
+    dev: true
+
+  /vue3-print-nb@0.1.4:
+    resolution: {integrity: sha512-LExI7viEzplR6ZKQ2b+V4U0cwGYbVD4fut/XHvk3UPGlT5CcvIGs6VlwGp107aKgk6P8Pgx4rco3Rehv2lti3A==}
     dependencies:
       vue: 3.3.4
     dev: true

@@ -129,6 +129,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/vue3/': [
     { text: 'vue3弹幕', link: '/vue3/vue3弹幕' },
+    { text: 'vue3打印', link: '/vue3/vue3打印' },
     { text: 'pinia使用', link: '/vue3/pinia使用' },
     { text: 'vue3好用的插件记录', link: '/vue3/vue3好用的插件记录' },
     { text: 'vue3一些语法的使用', link: '/vue3/vue3一些语法的使用' },

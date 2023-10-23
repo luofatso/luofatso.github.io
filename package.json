@@ -29,10 +29,12 @@
     "duration": "link:dayjs/plugin/duration",
     "element-plus": "^2.4.1",
     "js-calendar-converter": "^0.0.4",
+    "qrcode.vue": "^3.4.1",
     "sass": "^1.58.3",
     "valine": "^1.5.1",
     "vitepress": "1.0.0-rc.22",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue3-print-nb": "^0.1.4"
   },
   "prettier": "@femm/prettier"
 }
