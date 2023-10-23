@@ -216,5 +216,28 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '吃什么', link: '/关于生活/小工具/eat' }
       ]
     }
-  ]
+  ],
+  // '/大前端/': [
+  //   {
+  //     text: 'CSS',
+  //     collapsed: true,
+  //     items: [
+  //       { text: '玩转CSS', link: '/大前端/css/玩转CSS' },
+  //       { text: 'css按钮带五角星', link: '/大前端/css/css按钮带五角星' },
+  //       { text: 'css文字渐变', link: '/大前端/css/css文字渐变' },
+  //       { text: 'css画正方形', link: '/大前端/css/css画正方形' },
+  //       { text: 'css画三角形', link: '/大前端/css/css画三角形' },
+  //       { text: 'css超出省略', link: '/大前端/css/css超出省略' },
+  //       { text: 'grid布局', link: '/大前端/css/grid布局' },
+  //       { text: 'css立体投影', link: '/大前端/css/css立体投影' },
+  //       { text: 'css画一个三只小鸟按钮', link: '/大前端/css/css画一个三只小鸟按钮' },
+  //       { text: 'css边框动画合集', link: '/大前端/css/css边框动画合集' },
+  //       { text: '旋转卡片', link: '/大前端/css/旋转卡片' },
+  //       { text: '立方体旋转', link: '/大前端/css/立方体旋转' },
+  //       { text: 'css自动打字器', link: '/大前端/css/css自动打字器' },
+  //       { text: 'css loading', link: '/大前端/css/css-loading' },
+  //       { text: 'css画心', link: '/大前端/css/css画心' }
+  //     ]
+  //   },
+  // ]
 }
