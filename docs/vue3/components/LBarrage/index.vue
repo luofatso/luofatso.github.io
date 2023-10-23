@@ -4,7 +4,7 @@
       <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <LBarrage
+    <l-barrage
       ref="barrageRef"
       :arr="[]"
       :isPause="isPause"

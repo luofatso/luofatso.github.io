@@ -270,7 +270,7 @@ defineExpose({
   addBarrage,
 })
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .barrage-wrapper {
   overflow: hidden;
   z-index: 2;
