@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@femm/prettier':
-    specifier: ^1.0.1
-    version: 1.1.0
   '@mdit-vue/shared':
     specifier: ^0.12.0
     version: 0.12.1
@@ -26,6 +23,9 @@ devDependencies:
   js-calendar-converter:
     specifier: ^0.0.4
     version: 0.0.4
+  prettier:
+    specifier: ^3.0.3
+    version: 3.0.3
   qrcode.vue:
     specifier: ^3.4.1
     version: 3.4.1(vue@3.3.4)
@@ -472,10 +472,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@femm/prettier@1.1.0:
-    resolution: {integrity: sha512-9QljKnVUl9DlDdPO4hF7PuY5bhoHsgOapClB3td7XaMltSR/b9osSC6R/OF/TUAkn+GMRAnoJgua+qFRESRXcg==}
-    dev: true
 
   /@floating-ui/core@1.5.0:
     resolution: {integrity: sha512-kK1h4m36DQ0UHGj5Ah4db7R0rHemTqqO0QLvUqi1/mUUp3LuAWbWxdxSIf/XsnH9VS6rRVPLJCncjRzUvyCLXg==}
@@ -1631,6 +1627,12 @@ packages:
 
   /preact@10.18.1:
     resolution: {integrity: sha512-mKUD7RRkQQM6s7Rkmi7IFkoEHjuFqRQUaXamO61E6Nn7vqF/bo7EZCmSyrUnp2UWHw0O7XjZ2eeXis+m7tf4lg==}
+    dev: true
+
+  /prettier@3.0.3:
+    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /process-nextick-args@2.0.1:
