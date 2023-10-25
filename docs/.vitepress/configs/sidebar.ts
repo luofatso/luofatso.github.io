@@ -148,7 +148,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'cloc 计算代码行数', link: '/前端工具/cloc 计算代码行数' },
     { text: 'pnpm -- 相关', link: '/前端工具/pnpm -- 相关' },
     { text: 'vscode常用插件', link: '/前端工具/vscode常用插件' },
-    { text: 'dayjs使用', link: '/前端工具/dayjs使用' }
+    { text: 'dayjs使用', link: '/前端工具/dayjs使用' },
+    { text: '油猴脚本', link: '/前端工具/油猴脚本' }
   ],
   '/前端其它/': [
     { text: '视频点击放大', link: '/前端其它/视频点击放大' },
@@ -216,7 +217,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '吃什么', link: '/关于生活/小工具/eat' }
       ]
     }
-  ],
+  ]
   // '/大前端/': [
   //   {
   //     text: 'CSS',
