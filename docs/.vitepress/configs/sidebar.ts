@@ -144,9 +144,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/前端工具/': [
     { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
+    { text: 'Chocolatey -- windows包管理', link: '/前端工具/Chocolatey -- windows包管理' },
     { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' },
+    { text: 'n -- mac管理node', link: '/前端工具/n -- mac管理node' },
     { text: 'cloc 计算代码行数', link: '/前端工具/cloc 计算代码行数' },
     { text: 'pnpm -- 相关', link: '/前端工具/pnpm -- 相关' },
+    { text: 'yarn相关', link: '/前端工具/yarn相关' },
+    { text: 'Git常用命令', link: '/前端工具/Git常用命令' },
+    { text: 'webpack项目打包、保存内存泄漏', link: '/前端工具/webpack项目打包、保存内存泄漏' },
     { text: 'vscode常用插件', link: '/前端工具/vscode常用插件' },
     { text: 'dayjs使用', link: '/前端工具/dayjs使用' },
     { text: '油猴脚本', link: '/前端工具/油猴脚本' }
