@@ -1,13 +1,14 @@
 <template>
-  <div class="home">
+  <div class="home vp-doc">
     <div class="home-top">
       <h1 clas>FatsoLuo</h1>
       <p>道阻且长，行则将至</p>
     </div>
     <div class="home-main">
-      <p>《追光者》</p>
+      <p class="font-18 title pb-4">
+        <a href="/个人随笔/梦呓/追光者">《追光者》</a>
+      </p>
       <pre>
-        那些遥遥无期
         混沌颠倒
         满眼是光
         又憧憬着
@@ -23,15 +24,21 @@
 
         奇迹不待
         花开自然
-        </pre>
+
+        <p class="font-14 author">
+          2023-2-23
+          <a href="/about">FatsoLuo</a>
+        </p>
+      </pre>
     </div>
   </div>
 </template>
-<script setup>
-
-
-</script>
+<script setup></script>
 <style scoped lang="scss">
+.vp-doc p {
+  line-height: normal;
+  margin: 0;
+}
 .home {
   &-top {
     display: flex;
@@ -63,6 +70,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .author {
+      padding-left: 30px;
+      margin-top: -30px;
+    }
+    pre {
+      margin-left: -25px;
+    }
   }
 }
 </style>
