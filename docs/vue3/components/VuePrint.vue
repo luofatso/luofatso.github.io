@@ -59,7 +59,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import print from 'vue3-print-nb'
+import print from './vue3-print-nb'
 import QrcodeVue from 'qrcode.vue'
 import { ref } from 'vue'
 
