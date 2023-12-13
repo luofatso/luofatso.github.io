@@ -225,6 +225,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '倒计时查询', link: '/关于生活/小工具/date' },
         { text: '吃什么', link: '/关于生活/小工具/eat' }
       ]
+    },
+    {
+      text: '其他',
+      collapsed: true,
+      items: [
+        { text: '网络社区的悲剧', link: '/关于生活/other/网络社区的悲剧' },
+        { text: '什么行业适合创业', link: '/关于生活/other/什么行业适合创业' }
+      ]
     }
   ]
   // '/大前端/': [

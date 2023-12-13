@@ -43,6 +43,10 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: '小工具',
         link: '/关于生活/小工具/'
+      },
+      {
+        text: '其他',
+        link: '/关于生活/other/'
       }
     ]
   },
