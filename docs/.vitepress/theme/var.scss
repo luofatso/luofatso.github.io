@@ -170,6 +170,9 @@
 .w100 {
   width: 100%;
 }
+.img-bg {
+  background: no-repeat center / cover;
+}
 
 @for $i from 1 through 19 {
   .font-#{9 + $i} {

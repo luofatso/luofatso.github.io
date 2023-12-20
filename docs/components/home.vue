@@ -11,11 +11,18 @@
           ref="scrollWrapper"
           :style="{ transform: `translate3d(${translateX}px, 0, 0)` }"
         >
-          <div v-for="it in oneDayArr" :key="it.key" class="scroll-item box-center">
-            {{ it.one }}
+          <div
+            v-for="(it, i) in oneDayArr"
+            :key="it.key"
+            class="scroll-item img-bg"
+            :style="{ backgroundImage: `url('/home/one${++i}.jpg')` }"
+          >
+            <div class="scroll-item-text box-center">{{ it.one }}</div>
           </div>
         </div>
-        <div class="bg"></div>
+        <div class="bg box-center">
+          <h2 class="pa-0 ma-0">一点</h2>
+        </div>
       </div>
     </section>
     <section class="home-page home-poem">
@@ -68,7 +75,7 @@ const getOneDay = () => {
 
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop
-  if (scrollY >= winH + 200 && scrollY <= 5 * winH) {
+  if (scrollY >= winH + 200 && scrollY <= 5 * winH - 400) {
     const newX = -(scrollY - winH - 260)
     translateX.value = newX > 0 ? 0 : newX
   }
@@ -127,7 +134,7 @@ onUnmounted(() => {
   }
 
   &-point {
-    background-color: #000;
+    background-color: #232323;
     width: 100%;
     height: 500vh;
     position: relative;
@@ -152,14 +159,23 @@ onUnmounted(() => {
         .scroll-item {
           width: 35vw;
           height: 22vw;
-          background-color: #fff;
-          color: #000;
+          // background-color: #fff;
           min-width: 500px;
           min-height: 314px;
           max-width: 650px;
           max-height: 408px;
-          box-sizing: border-box;
-          padding: 50px;
+          position: relative;
+          &-text {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
+          }
         }
       }
     }
