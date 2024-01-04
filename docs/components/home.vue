@@ -15,13 +15,15 @@
             v-for="(it, i) in oneDayArr"
             :key="it.key"
             class="scroll-item img-bg"
-            :style="{ backgroundImage: `url('/home/one${++i}.jpg')` }"
+            :style="{ backgroundImage: `url('/blog/home/one${++i}.jpg')` }"
           >
             <div class="scroll-item-text box-center">{{ it.one }}</div>
           </div>
         </div>
         <div class="bg box-center">
-          <h2 class="pa-0 ma-0">一点</h2>
+          <h2 class="pa-0 ma-0">
+            <a href="/关于生活/生活/每日一点">一点</a>
+          </h2>
         </div>
       </div>
     </section>
@@ -99,6 +101,9 @@ onUnmounted(() => {
 .vp-doc p {
   line-height: normal;
   margin: 0;
+}
+.vp-doc h2 {
+  border: none;
 }
 .home {
   &-page {
