@@ -230,8 +230,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '其他',
       collapsed: true,
       items: [
+        { text: '人类和人生的意义', link: '/关于生活/other/人类和人生的意义' },
         { text: '网络社区的悲剧', link: '/关于生活/other/网络社区的悲剧' },
-        { text: '什么行业适合创业', link: '/关于生活/other/什么行业适合创业' }
+        { text: '什么行业适合创业', link: '/关于生活/other/什么行业适合创业' },
+        { text: '失业难以避免，重构人生规划', link: '/关于生活/other/失业难以避免，重构人生规划' }
       ]
     }
   ]
