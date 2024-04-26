@@ -190,6 +190,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '旅行',
       collapsed: true,
       items: [
+        { text: '大邑-季禅沟', link: '/关于生活/旅行/大邑-季禅沟' },
         { text: '彭州-狮子山', link: '/关于生活/旅行/彭州-狮子山' },
         { text: '成都-天府-鹅项岭', link: '/关于生活/旅行/成都-天府-鹅项岭' },
         { text: '彭州-葛仙山', link: '/关于生活/旅行/彭州-葛仙山' },
