@@ -157,6 +157,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: '油猴脚本', link: '/前端工具/油猴脚本' }
   ],
   '/前端其它/': [
+    { text: '附件下载地址实现预览', link: '/前端其它/附件下载地址实现预览' },
     { text: '视频点击放大', link: '/前端其它/视频点击放大' },
     { text: '随机彩票', link: '/前端其它/随机彩票' },
     { text: '前端SEQ方案', link: '/前端其它/前端SEQ方案' },
