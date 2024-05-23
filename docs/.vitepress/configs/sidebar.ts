@@ -228,7 +228,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'BMI计算器', link: '/关于生活/小工具/bmi' },
         { text: '阴阳历查询', link: '/关于生活/小工具/阴阳历查询' },
         { text: '倒计时查询', link: '/关于生活/小工具/date' },
-        { text: '吃什么', link: '/关于生活/小工具/eat' }
+        { text: '吃什么', link: '/关于生活/小工具/eat' },
+        { text: '随机彩票', link: '/前端其它/随机彩票' }
       ]
     },
     {
