@@ -1,16 +1,12 @@
 # .gitlab-ci.yml
 
+
+image: node:@latest
+
 # 定义构建和部署阶段
 stages:
-  - install
   - build
   - deploy
-
-install:
-  stage: install
-  script:  
-    - curl -fsSL https://deb.nodesource.com/setup_lts.x
-    - apt-get install -y nodejs npm  
 
 # 编译/打包项目（例如，使用 npm 或 yarn）
 build:
