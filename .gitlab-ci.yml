@@ -1,9 +1,5 @@
 # .gitlab-ci.yml
 
-# 定义全局变量（可选）
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive  # 如果你的项目使用了 git submodules
-
 # 定义构建和部署阶段
 stages:
   - build
@@ -26,6 +22,5 @@ pages:
   artifacts:
     paths:
       - dist/  # 指定 GitLab Pages 应该从哪个目录读取文件
-    expire_in: 1 week  # 保留 Pages 的时间，可选
   only:
     - master  # 只在 main 分支上部署 Pages（你可以根据需要更改）
