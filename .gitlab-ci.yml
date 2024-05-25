@@ -23,8 +23,6 @@ build-job:
 # 部署到 GitLab Pages
 pages:
   stage: deploy
-  script:
-    # - echo "Nothing to do here, the pages job is automatically handled by GitLab"
   artifacts:
     paths:
       - dist/  # 指定 GitLab Pages 应该从哪个目录读取文件
