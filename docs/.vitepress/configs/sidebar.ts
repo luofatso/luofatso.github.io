@@ -154,6 +154,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     { text: 'webpack项目打包、保存内存泄漏', link: '/前端工具/webpack项目打包、保存内存泄漏' },
     { text: 'vscode常用插件', link: '/前端工具/vscode常用插件' },
     { text: 'dayjs使用', link: '/前端工具/dayjs使用' },
+    { text: 'Sourcetree', link: '/前端工具/Sourcetree' },
     { text: '油猴脚本', link: '/前端工具/油猴脚本' }
   ],
   '/前端其它/': [
