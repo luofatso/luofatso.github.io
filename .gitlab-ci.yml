@@ -9,8 +9,8 @@ stages:
 install:
   stage: install
   script:  
-    - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -  # 以 18.x 为例，你可以更改为你需要的版本  
-    - apt-get install -y nodejs  
+    - curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - 
+    - sudo apt-get install -y nodejs npm  
 
 # 编译/打包项目（例如，使用 npm 或 yarn）
 build:
