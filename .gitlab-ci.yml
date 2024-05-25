@@ -19,6 +19,9 @@ build:
 # 部署到 GitLab Pages
 pages:
   stage: deploy
+  script:
+    - rm -rf dist/*
+    - mv dist/* dist
   artifacts:
     paths:
       - dist/  # 指定 GitLab Pages 应该从哪个目录读取文件
