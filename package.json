@@ -32,7 +32,6 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "dayjs": "^1.11.7",
-    "duration": "link:dayjs/plugin/duration",
     "element-plus": "^2.4.1",
     "husky": "^8.0.0",
     "js-calendar-converter": "^0.0.4",

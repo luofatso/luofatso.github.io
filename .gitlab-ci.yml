@@ -12,8 +12,8 @@ stages:
 build:
   stage: build
   script:
-    - pnpm i    # 安装依赖（如果你使用 npm）
-    - pnpm build  # 编译/打包你的网站
+    - npm install    # 安装依赖（如果你使用 npm）
+    - npm run build  # 编译/打包你的网站
   artifacts:
     paths:
       - dist/  # 指定需要部署到 Pages 的目录
