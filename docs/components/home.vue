@@ -15,7 +15,7 @@
             v-for="(it, i) in oneDayArr"
             :key="it.key"
             class="scroll-item img-bg"
-            :style="{ backgroundImage: `url('/blog/home/one${++i}.jpg')` }"
+            :style="{ backgroundImage: `url('/home/one${++i}.jpg')` }"
           >
             <div class="scroll-item-text box-center">{{ it.one }}</div>
           </div>
@@ -77,7 +77,7 @@ const getOneDay = () => {
 
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop
-  if (scrollY >= winH + 200 && scrollY <= 5 * winH - 400) {
+  if (scrollY >= winH + 200 && scrollY <= 4 * winH - 400) {
     const newX = -(scrollY - winH - 260)
     translateX.value = newX > 0 ? 0 : newX
   }
@@ -141,7 +141,7 @@ onUnmounted(() => {
   &-point {
     background-color: #232323;
     width: 100%;
-    height: 500vh;
+    height: 350vh;
     position: relative;
     .sticky-container {
       position: sticky;

@@ -235,3 +235,8 @@
     font-weight: 400 + $i * 100 !important;
   }
 }
+
+.vp-doc.container{
+  padding: 0 !important;
+  max-width: inherit !important;
+}
