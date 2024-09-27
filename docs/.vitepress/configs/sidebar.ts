@@ -85,103 +85,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
-  '/css/': [
-    { text: '玩转CSS', link: '/css/玩转CSS' },
-    { text: 'css按钮带五角星', link: '/css/css按钮带五角星' },
-    { text: 'css文字渐变', link: '/css/css文字渐变' },
-    { text: 'css画正方形', link: '/css/css画正方形' },
-    { text: 'css画三角形', link: '/css/css画三角形' },
-    { text: 'css超出省略', link: '/css/css超出省略' },
-    { text: 'grid布局', link: '/css/grid布局' },
-    { text: 'css立体投影', link: '/css/css立体投影' },
-    { text: 'css画一个三只小鸟按钮', link: '/css/css画一个三只小鸟按钮' },
-    { text: 'css边框动画合集', link: '/css/css边框动画合集' },
-    { text: '旋转卡片', link: '/css/旋转卡片' },
-    { text: '立方体旋转', link: '/css/立方体旋转' },
-    { text: 'css自动打字器', link: '/css/css自动打字器' },
-    { text: 'css loading', link: '/css/css-loading' },
-    { text: 'css画心', link: '/css/css画心' }
-  ],
-  '/JS/': [
-    { text: 'ES6小技巧', link: '/JS/ES6小技巧' },
-    { text: '原生js拖拽', link: '/JS/原生js拖拽' },
-    { text: 'JS返回顶部', link: '/JS/js返回顶部的几种解决方案' },
-    { text: 'JS片段', link: '/JS/JS片段' },
-    { text: '本地储存', link: '/JS/本地储存' }
-  ],
-  '/vue2/': [
-    {
-      text: '图片裁剪、压缩、上传、预览组件',
-      link: '/vue2/图片裁剪、压缩、上传、预览组件'
-    },
-    {
-      text: 'element树形结构+穿梭框实例',
-      link: '/vue2/element树形结构+穿梭框实例'
-    },
-    { text: 'socket应用', link: '/vue2/socket应用' },
-    { text: 'vue transition', link: '/vue2/vue transition' },
-    { text: 'vue-clipboard2使用', link: '/vue2/vue-clipboard2使用' },
-    { text: 'vue-lottie使用', link: '/vue2/vue-lottie使用' },
-    { text: 'vue2 slot', link: '/vue2/vue2 slot' },
-    { text: 'Vue锚点双向定位', link: '/vue2/Vue锚点双向定位' },
-    { text: 'vue一些小技巧总结', link: '/vue2/vue一些小技巧总结' },
-    { text: 'vue中使用音视频', link: '/vue2/vue中使用音视频' }
-  ],
-  '/vue3/': [
-    { text: 'vue3弹幕', link: '/vue3/vue3弹幕' },
-    { text: 'vue3打印', link: '/vue3/vue3打印' },
-    { text: 'pinia使用', link: '/vue3/pinia使用' },
-    { text: 'vue3好用的插件记录', link: '/vue3/vue3好用的插件记录' },
-    { text: 'vue3一些语法的使用', link: '/vue3/vue3一些语法的使用' },
-    { text: 'vue3知识点巩固', link: '/vue3/vue3知识点巩固' },
-    { text: 'vue3中mitt的使用', link: '/vue3/vue3中mitt的使用' },
-    { text: 'element-plus多选框', link: '/vue3/element-plus-table多选框' },
-    {
-      text: 'element-plus-select自定义指令下拉加载更多',
-      link: '/vue3/element-plus-select自定义指令下拉加载更多'
-    },
-    { text: '首屏动画', link: '/vue3/首屏动画' }
-  ],
-  '/前端工具/': [
-    { text: 'ngrok -- 内网穿透使用', link: '/前端工具/ngrok -- 内网穿透使用' },
-    { text: 'Chocolatey -- windows包管理', link: '/前端工具/Chocolatey -- windows包管理' },
-    { text: 'nvm -- windows管理node', link: '/前端工具/nvm -- windows管理node' },
-    { text: 'n -- mac管理node', link: '/前端工具/n -- mac管理node' },
-    { text: 'cloc 计算代码行数', link: '/前端工具/cloc 计算代码行数' },
-    { text: 'pnpm -- 相关', link: '/前端工具/pnpm -- 相关' },
-    { text: 'yarn相关', link: '/前端工具/yarn相关' },
-    { text: 'Git常用命令', link: '/前端工具/Git常用命令' },
-    { text: 'webpack项目打包、保存内存泄漏', link: '/前端工具/webpack项目打包、保存内存泄漏' },
-    { text: 'vscode常用插件', link: '/前端工具/vscode常用插件' },
-    { text: 'dayjs使用', link: '/前端工具/dayjs使用' },
-    { text: 'Sourcetree', link: '/前端工具/Sourcetree' },
-    { text: '油猴脚本', link: '/前端工具/油猴脚本' }
-  ],
-  '/前端其它/': [
-    { text: '附件下载地址实现预览', link: '/前端其它/附件下载地址实现预览' },
-    { text: '视频点击放大', link: '/前端其它/视频点击放大' },
-    { text: '随机彩票', link: '/前端其它/随机彩票' },
-    { text: '前端SEQ方案', link: '/前端其它/前端SEQ方案' },
-    {
-      text: 'amazon-ivs-videojs-threejs广角修复',
-      link: '/前端其它/amazon-ivs-videojs-threejs广角修复'
-    },
-    { text: 'videojs-flvh265直播', link: '/前端其它/videojs-flvh265直播' },
-    {
-      text: 'doT.js -- JavaScript 模板引擎使用',
-      link: '/前端其它/doT.js -- JavaScript 模板引擎使用'
-    }
-  ],
-  '/关于工作/前端自检/': [
-    { text: '前端自检系列 --- HTML&CSS', link: '/关于工作/前端自检/HTML&CSS' },
-    { text: '前端自检系列 --- JavaScript', link: '/关于工作/前端自检/JavaScript' },
-    { text: '前端自检系列 --- 计算机基础', link: '/关于工作/前端自检/计算机基础' },
-    { text: '前端自检系列 --- 数据结构和算法', link: '/关于工作/前端自检/数据结构和算法' },
-    { text: '前端自检系列 --- 运行环境', link: '/关于工作/前端自检/运行环境' },
-    { text: '前端自检系列 --- 框架和类库', link: '/关于工作/前端自检/框架和类库' },
-    { text: '前端自检系列 --- 前端工程', link: '/关于工作/前端自检/前端工程' },
-    { text: '前端自检系列 --- 项目和业务', link: '/关于工作/前端自检/项目和业务' }
-  ],
   '/关于生活/': [
     {
       text: 'I Love You',
@@ -244,28 +147,145 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '失业难以避免，重构人生规划', link: '/关于生活/other/失业难以避免，重构人生规划' }
       ]
     }
+  ],
+  '/大前端/': [
+    {
+      text: 'Css',
+      collapsed: true,
+      items: [
+        { text: '玩转CSS', link: '/大前端/Css/玩转CSS' },
+        { text: 'css按钮带五角星', link: '/大前端/Css/css按钮带五角星' },
+        { text: 'css文字渐变', link: '/大前端/Css/css文字渐变' },
+        { text: 'css画正方形', link: '/大前端/Css/css画正方形' },
+        { text: 'css画三角形', link: '/大前端/Css/css画三角形' },
+        { text: 'css超出省略', link: '/大前端/Css/css超出省略' },
+        { text: 'grid布局', link: '/大前端/Css/grid布局' },
+        { text: 'css立体投影', link: '/大前端/Css/css立体投影' },
+        { text: 'css画一个三只小鸟按钮', link: '/大前端/Css/css画一个三只小鸟按钮' },
+        { text: 'css边框动画合集', link: '/大前端/Css/css边框动画合集' },
+        { text: '旋转卡片', link: '/大前端/Css/旋转卡片' },
+        { text: '立方体旋转', link: '/大前端/Css/立方体旋转' },
+        { text: 'css自动打字器', link: '/大前端/Css/css自动打字器' },
+        { text: 'css loading', link: '/大前端/Css/css-loading' },
+        { text: 'css画心', link: '/大前端/Css/css画心' }
+      ]
+    },
+    {
+      text: 'JavaScript',
+      collapsed: true,
+      items: [
+        { text: 'ES6小技巧', link: '/大前端/JavaScript/ES6小技巧' },
+        { text: '原生js拖拽', link: '/大前端/JavaScript/原生js拖拽' },
+        { text: 'JS返回顶部', link: '/大前端/JavaScript/js返回顶部的几种解决方案' },
+        { text: 'JS片段', link: '/大前端/JavaScript/JS片段' },
+        { text: '本地储存', link: '/大前端/JavaScript/本地储存' }
+      ]
+    },
+    {
+      text: 'Vue2',
+      collapsed: true,
+      items: [
+        {
+          text: '图片裁剪、压缩、上传、预览组件',
+          link: '/大前端/Vue2/图片裁剪、压缩、上传、预览组件'
+        },
+        {
+          text: 'element树形结构+穿梭框实例',
+          link: '/大前端/Vue2/element树形结构+穿梭框实例'
+        },
+        { text: 'socket应用', link: '/大前端/Vue2/socket应用' },
+        { text: 'vue transition', link: '/大前端/Vue2/vue transition' },
+        { text: 'vue-clipboard2使用', link: '/大前端/Vue2/vue-clipboard2使用' },
+        { text: 'vue-lottie使用', link: '/大前端/Vue2/vue-lottie使用' },
+        { text: 'vue2 slot', link: '/大前端/Vue2/vue2 slot' },
+        { text: 'Vue锚点双向定位', link: '/大前端/Vue2/Vue锚点双向定位' },
+        { text: 'vue一些小技巧总结', link: '/大前端/Vue2/vue一些小技巧总结' },
+        { text: 'vue中使用音视频', link: '/大前端/Vue2/vue中使用音视频' }
+      ]
+    },
+    {
+      text: 'Vue3',
+      collapsed: true,
+      items: [
+        { text: 'vue3弹幕', link: '/大前端/Vue3/vue3弹幕' },
+        { text: 'vue3打印', link: '/大前端/Vue3/vue3打印' },
+        { text: 'pinia使用', link: '/大前端/Vue3/pinia使用' },
+        { text: 'vue3好用的插件记录', link: '/大前端/Vue3/vue3好用的插件记录' },
+        { text: 'vue3一些语法的使用', link: '/大前端/Vue3/vue3一些语法的使用' },
+        { text: 'vue3知识点巩固', link: '/大前端/Vue3/vue3知识点巩固' },
+        { text: 'vue3中mitt的使用', link: '/大前端/Vue3/vue3中mitt的使用' },
+        { text: 'element-plus多选框', link: '/大前端/Vue3/element-plus-table多选框' },
+        {
+          text: 'element-plus-select自定义指令下拉加载更多',
+          link: '/大前端/Vue3/element-plus-select自定义指令下拉加载更多'
+        },
+        { text: '首屏动画', link: '/大前端/Vue3/首屏动画' }
+      ]
+    },
+    {
+      text: '前端自检',
+      collapsed: true,
+      items: [
+        { text: '前端自检系列 --- HTML&CSS', link: '/大前端/前端自检/HTML&CSS' },
+        { text: '前端自检系列 --- JavaScript', link: '/大前端/前端自检/JavaScript' },
+        { text: '前端自检系列 --- 计算机基础', link: '/大前端/前端自检/计算机基础' },
+        { text: '前端自检系列 --- 数据结构和算法', link: '/大前端/前端自检/数据结构和算法' },
+        { text: '前端自检系列 --- 运行环境', link: '/大前端/前端自检/运行环境' },
+        { text: '前端自检系列 --- 框架和类库', link: '/大前端/前端自检/框架和类库' },
+        { text: '前端自检系列 --- 前端工程', link: '/大前端/前端自检/前端工程' },
+        { text: '前端自检系列 --- 项目和业务', link: '/大前端/前端自检/项目和业务' }
+      ]
+    },
+    {
+      text: '前端工具',
+      collapsed: true,
+      items: [
+        { text: 'ngrok -- 内网穿透使用', link: '/大前端/前端工具/ngrok -- 内网穿透使用' },
+        {
+          text: 'Chocolatey -- windows包管理',
+          link: '/大前端/前端工具/Chocolatey -- windows包管理'
+        },
+        { text: 'nvm -- windows管理node', link: '/大前端/前端工具/nvm -- windows管理node' },
+        { text: 'n -- mac管理node', link: '/大前端/前端工具/n -- mac管理node' },
+        { text: 'cloc 计算代码行数', link: '/大前端/前端工具/cloc 计算代码行数' },
+        { text: 'pnpm -- 相关', link: '/大前端/前端工具/pnpm -- 相关' },
+        { text: 'yarn相关', link: '/大前端/前端工具/yarn相关' },
+        { text: 'Git常用命令', link: '/大前端/前端工具/Git常用命令' },
+        {
+          text: 'webpack项目打包、保存内存泄漏',
+          link: '/大前端/前端工具/webpack项目打包、保存内存泄漏'
+        },
+        { text: 'vscode常用插件', link: '/大前端/前端工具/vscode常用插件' },
+        { text: 'dayjs使用', link: '/大前端/前端工具/dayjs使用' },
+        { text: 'Sourcetree', link: '/大前端/前端工具/Sourcetree' },
+        { text: '油猴脚本', link: '/大前端/前端工具/油猴脚本' }
+      ]
+    },
+    {
+      text: '前端项目',
+      collapsed: true,
+      items: [
+        { text: 'vue2直播项目一些代码片段', link: '/大前端/前端项目/vue2直播项目一些代码片段' }
+      ]
+    },
+    {
+      text: '前端其他',
+      collapsed: true,
+      items: [
+        { text: '附件下载地址实现预览', link: '/大前端/前端其它/附件下载地址实现预览' },
+        { text: '视频点击放大', link: '/大前端/前端其它/视频点击放大' },
+        { text: '随机彩票', link: '/大前端/前端其它/随机彩票' },
+        { text: '前端SEQ方案', link: '/大前端/前端其它/前端SEQ方案' },
+        {
+          text: 'amazon-ivs-videojs-threejs广角修复',
+          link: '/大前端/前端其它/amazon-ivs-videojs-threejs广角修复'
+        },
+        { text: 'videojs-flvh265直播', link: '/大前端/前端其它/videojs-flvh265直播' },
+        {
+          text: 'doT.js -- JavaScript 模板引擎使用',
+          link: '/大前端/前端其它/doT.js -- JavaScript 模板引擎使用'
+        }
+      ]
+    }
   ]
-  // '/大前端/': [
-  //   {
-  //     text: 'CSS',
-  //     collapsed: true,
-  //     items: [
-  //       { text: '玩转CSS', link: '/大前端/css/玩转CSS' },
-  //       { text: 'css按钮带五角星', link: '/大前端/css/css按钮带五角星' },
-  //       { text: 'css文字渐变', link: '/大前端/css/css文字渐变' },
-  //       { text: 'css画正方形', link: '/大前端/css/css画正方形' },
-  //       { text: 'css画三角形', link: '/大前端/css/css画三角形' },
-  //       { text: 'css超出省略', link: '/大前端/css/css超出省略' },
-  //       { text: 'grid布局', link: '/大前端/css/grid布局' },
-  //       { text: 'css立体投影', link: '/大前端/css/css立体投影' },
-  //       { text: 'css画一个三只小鸟按钮', link: '/大前端/css/css画一个三只小鸟按钮' },
-  //       { text: 'css边框动画合集', link: '/大前端/css/css边框动画合集' },
-  //       { text: '旋转卡片', link: '/大前端/css/旋转卡片' },
-  //       { text: '立方体旋转', link: '/大前端/css/立方体旋转' },
-  //       { text: 'css自动打字器', link: '/大前端/css/css自动打字器' },
-  //       { text: 'css loading', link: '/大前端/css/css-loading' },
-  //       { text: 'css画心', link: '/大前端/css/css画心' }
-  //     ]
-  //   },
-  // ]
 }

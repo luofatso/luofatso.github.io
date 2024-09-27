@@ -54,36 +54,36 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '大前端',
     items: [
       {
-        text: 'CSS',
-        link: '/css/'
+        text: 'Css',
+        link: '/大前端/Css/'
       },
       {
         text: 'JavaScript',
-        link: '/JS/'
+        link: '/大前端/JavaScript/'
       },
       {
         text: 'Vue2',
-        link: '/vue2/'
+        link: '/大前端/Vue2/'
       },
       {
         text: 'Vue3',
-        link: '/vue3/'
+        link: '/大前端/Vue3/'
       },
       {
         text: '前端自检',
-        link: '/关于工作/前端自检/'
+        link: '/大前端/前端自检/'
       },
       {
-        text: '工具',
-        link: '/前端工具/'
+        text: '前端工具',
+        link: '/大前端/前端工具/'
       },
       {
-        text: '其它',
-        link: '/前端其它/'
+        text: '前端项目',
+        link: '/大前端/前端项目/'
       },
       {
-        text: '项目',
-        link: '/前端项目/'
+        text: '前端其它',
+        link: '/大前端/前端其它/'
       }
     ]
   }
