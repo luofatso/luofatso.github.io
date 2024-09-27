@@ -31,7 +31,7 @@ path.resolve(__dirname, '../regx/regx.js')
 ```
 const path = require('path')
 
-console.log(path.normalize('/Desktop//FatsoLuo//node/..'))
+console.log(path.normalize('/Desktop//LuoFatso//node/..'))
 
 //
 ```

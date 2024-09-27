@@ -12,15 +12,12 @@ export const head: HeadConfig[] = [
       rel: 'alternate icon',
       href: '/blog/baby.png',
       type: 'image/png',
-      sizes: '16x16',
-    },
+      sizes: '16x16'
+    }
   ],
-  ['meta', { name: 'author', content: 'FatsoLuo' }],
+  ['meta', { name: 'author', content: 'LuoFatso' }],
   ['link', { rel: 'mask-icon', href: '/blog/baby.png', color: '#ffffff' }],
   ['meta', { name: 'msapplication-TileImage', content: '/blog/baby.png' }],
   ['link', { rel: 'apple-touch-icon', href: '/blog/favicon.ico' }],
-  [
-    "script",
-    { src: 'https://unpkg.com/valine/dist/Valine.min.js'},
-  ],
+  ['script', { src: 'https://unpkg.com/valine/dist/Valine.min.js' }]
 ]

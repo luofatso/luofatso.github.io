@@ -3,11 +3,11 @@ import { defineConfig } from 'vitepress'
 import { head, nav, sidebar } from './configs'
 
 export default defineConfig({
-  title: 'FatsoLuo',
-  description: 'FatsoLuo的个人博客，记录随笔与学习笔记，大前端相关的知识等',
+  title: 'LuoFatso',
+  description: 'LuoFatso的个人博客，记录随笔与学习笔记，大前端相关的知识等',
   srcDir: '../docs',
   outDir: '../dist',
-  base: "/blog/",
+  base: '/',
   cleanUrls: true,
   head,
   markdown: {
@@ -15,15 +15,15 @@ export default defineConfig({
   },
   lastUpdated: true,
   themeConfig: {
-    lastUpdatedText: "最近更新时间",
+    lastUpdatedText: '最近更新时间',
     i18nRouting: false,
-    // author: 'FatsoLuo',
-    siteTitle: 'FatsoLuo',
+    // author: 'LuoFatso',
+    siteTitle: 'LuoFatso',
     logo: '/baby.png', //导航栏左侧头像
     docFooter: {
       //上下篇文本
       prev: '上一篇',
-      next: '下一篇',
+      next: '下一篇'
     },
     outline: {
       level: 'deep',
@@ -33,13 +33,13 @@ export default defineConfig({
     sidebar,
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present FatsoLuo',
-    },
+      copyright: 'Copyright © 2019-present LuoFatso'
+    }
   },
   vite: {
     server: {
-      port: 8080,
+      port: 8000,
       host: '0.0.0.0'
     }
-  },
+  }
 })

@@ -1,7 +1,7 @@
 <template>
   <div class="home vp-doc">
     <section class="home-page home-start">
-      <h1 class="blog-author" title="FatsoLuo">FatsoLuo</h1>
+      <h1 class="blog-author" title="LuoFatso">LuoFatso</h1>
       <p>道阻且长，行则将至</p>
     </section>
     <section class="home-page home-point">
@@ -50,7 +50,7 @@
 
         <p class="font-14 author">
           2023-2-23
-          <a href="/about">FatsoLuo</a>
+          <a href="/about">LuoFatso</a>
         </p>
       </pre>
     </section>

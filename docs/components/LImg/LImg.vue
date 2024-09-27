@@ -3,7 +3,7 @@
     :class="imgs.length == 1 ? 'justify-center' : 'justify-between'">
     <div class="mb-1 img-box-item" v-for="(it, i) in imgs" :key="i" :class="'imgs' + (imgs.length < 3 ? imgs.length : 3)"
       @click="openImg(it)" :style="{ flex: imgs.length === 1 ? '0 0 ' + width + '%' : '' }">
-      <img class="w100" :src="'/blog'+it.src" :alt='it.title' :title='it.title'>
+      <img class="w100" :src="it.src" :alt='it.title' :title='it.title'>
     </div>
   </div>
   <p class="img-intr text-c font-12" v-if="intr && intr.length">{{ intr }}</p>
