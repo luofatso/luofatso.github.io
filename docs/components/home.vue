@@ -1,9 +1,10 @@
 <template>
-  <div class="home vp-doc">
+  <div class="home">
     <section class="home-page home-start">
       <h1 class="blog-author" title="LuoFatso">LuoFatso</h1>
       <p>道阻且长，行则将至</p>
     </section>
+
     <section class="home-page home-point">
       <div class="sticky-container">
         <div
@@ -27,6 +28,7 @@
         </div>
       </div>
     </section>
+    
     <section class="home-page home-poem">
       <p class="font-18 title pb-4">
         <a href="/个人随笔/梦呓/追光者">《追光者》</a>
@@ -116,7 +118,6 @@ onUnmounted(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 64px);
     background: no-repeat url('/bg.jpeg') center / cover;
     color: #fff;
 
@@ -142,7 +143,7 @@ onUnmounted(() => {
   &-point {
     background-color: #232323;
     width: 100%;
-    height: 400vh;
+    height: 500vh !important;
     position: relative;
     .sticky-container {
       position: sticky;
