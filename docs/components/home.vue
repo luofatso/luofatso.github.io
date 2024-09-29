@@ -4,7 +4,7 @@
       <h1 class="blog-author" title="LuoFatso">LuoFatso</h1>
       <p>道阻且长，行则将至</p>
     </section>
-
+   
     <section class="home-page home-point">
       <div class="sticky-container">
         <div
@@ -28,14 +28,42 @@
         </div>
       </div>
     </section>
-    
+    <section class="home-page home-poem">
+      <p class="font-18 title pb-4">
+        <a href="/个人随笔/梦呓/追光者">《追光者》</a>
+      </p>
+      <div class="pt-6 pl-18">
+        <p>那些混沌颠倒</p>
+        <p>是熬啊 是数着</p>
+        <p>满眼盈溢着的星光</p>
+        <p>是憧憬 是过往</p>
+        <p>期盼着过的时间里</p>
+
+        <p class="pt-8">时间若鸿沟</p>
+        <p>是从未感知</p>
+        <p>从未拥有过的 温情</p>
+
+        <p class="pt-8">其实早已悄然</p>
+        <p>书写画描</p>
+        <p>藏酝酵酿</p>
+
+        <p class="pt-8">花开不待</p>
+        <p>奇迹自然</p>
+
+        <p class="font-14 pt-6 pl-8">
+          2023-2-23
+          <a href="/about">LuoFatso</a>
+        </p>
+      </div>
+    </section>
     <section class="home-page home-poem">
       <p class="font-18 title pb-4">
         <a href="/个人随笔/梦呓/追光者">《追光者》</a>
       </p>
       <pre>
+        <code>
         那些混沌颠倒
-        是熬啊 是数啊
+        是熬啊 是数着
         满眼盈溢着的星光
         是憧憬 是过往
         期盼着过的时间里
@@ -55,6 +83,7 @@
           2023-2-23
           <a href="/about">LuoFatso</a>
         </p>
+      </code>
       </pre>
     </section>
   </div>
@@ -220,6 +249,9 @@ onUnmounted(() => {
     }
     pre {
       margin-left: -25px;
+    }
+    p {
+      padding: 3px 0;
     }
   }
 }
