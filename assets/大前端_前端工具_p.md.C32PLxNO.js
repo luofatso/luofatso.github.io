@@ -1,0 +1,39 @@
+import{_ as s,o as n,c as a,a2 as p}from"./chunks/framework.DkMK-_fX.js";const _=JSON.parse('{"title":"aa","description":"","frontmatter":{},"headers":[],"relativePath":"大前端/前端工具/p.md","filePath":"大前端/前端工具/p.md","lastUpdated":1727401527000}'),e={name:"大前端/前端工具/p.md"},l=p(`<h1 id="aa" tabindex="-1">aa <a class="header-anchor" href="#aa" aria-label="Permalink to &quot;aa&quot;">​</a></h1><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>module.exports = {</span></span>
+<span class="line"><span>  // 一行的字符数，如果超过会进行换行，默认为80</span></span>
+<span class="line"><span>  printWidth: 100,</span></span>
+<span class="line"><span>  // 一个tab代表几个空格数，默认为2</span></span>
+<span class="line"><span>  tabWidth: 2,</span></span>
+<span class="line"><span>  // 是否使用tab进行缩进，默认为false，表示用空格进行缩减</span></span>
+<span class="line"><span>  useTabs: false,</span></span>
+<span class="line"><span>  // 字符串是否使用单引号，默认为false，使用双引号</span></span>
+<span class="line"><span>  singleQuote: false,</span></span>
+<span class="line"><span>  // 行位是否使用分号，默认为true</span></span>
+<span class="line"><span>  semi: false,</span></span>
+<span class="line"><span>  // 是否使用尾逗号，有三个可选值&quot;&lt;none|es5|all&gt;&quot;</span></span>
+<span class="line"><span>  trailingComma: &quot;none&quot;</span></span>
+<span class="line"><span>  // // 对象大括号直接是否有空格，默认为true，效果：{ foo: bar }</span></span>
+<span class="line"><span>  // bracketSpacing: true,</span></span>
+<span class="line"><span>  // // HTML元素（包括 JSX 等）具有多个属性时，将结束标签右尖括号 ＞ 另起一行</span></span>
+<span class="line"><span>  // bracketSameLine: false,</span></span>
+<span class="line"><span>  // // 箭头函数仅有一个参数时，参数也添加括号 (x) =&gt; x</span></span>
+<span class="line"><span>  // arrowParens: &#39;always&#39;,</span></span>
+<span class="line"><span>  // // 每个文件格式化的范围是文件的全部内容</span></span>
+<span class="line"><span>  // rangeStart: 0,</span></span>
+<span class="line"><span>  // rangeEnd: Infinity,</span></span>
+<span class="line"><span>  // // 对所有文件进行格式化，而不是只对在开头含有特定注释（@prettier 或 @format）的文件进行格式化</span></span>
+<span class="line"><span>  // requirePragma: false,</span></span>
+<span class="line"><span>  // // 格式化的同时自动插入 @format 的特殊注释（表示该文件已被格式化）</span></span>
+<span class="line"><span>  // insertPragma: false,</span></span>
+<span class="line"><span>  // // 对 HTML 全局空白不敏感</span></span>
+<span class="line"><span>  // htmlWhitespaceSensitivity: &#39;ignore&#39;,</span></span>
+<span class="line"><span>  // // 不对 vue 中的 script 及 style 标签进行缩进</span></span>
+<span class="line"><span>  // vueIndentScriptAndStyle: false,</span></span>
+<span class="line"><span>  // // 自动格式化嵌入的代码内容</span></span>
+<span class="line"><span>  // embeddedLanguageFormatting: &#39;auto&#39;,</span></span>
+<span class="line"><span>  // // 不强制 html vue jsx 中的属性（具有多个时）单独占一行</span></span>
+<span class="line"><span>  // singleAttributePerLine: false,</span></span>
+<span class="line"><span>  // // 在 jsx 中使用双引号</span></span>
+<span class="line"><span>  // jsxSingleQuote: false,</span></span>
+<span class="line"><span>  // // 仅在必需时为对象的 key 添加引号</span></span>
+<span class="line"><span>  // quoteProps: &#39;as-needed&#39;</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div>`,2),r=[l];function i(c,t,b,u,m,o){return n(),a("div",null,r)}const f=s(e,[["render",i]]);export{_ as __pageData,f as default};

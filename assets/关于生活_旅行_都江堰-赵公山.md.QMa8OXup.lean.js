@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.DkMK-_fX.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"关于生活/旅行/都江堰-赵公山.md","filePath":"关于生活/旅行/都江堰-赵公山.md","lastUpdated":1702304514000}'),r={name:"关于生活/旅行/都江堰-赵公山.md"};function _(o,s,c,n,d,p){return t(),a("div")}const f=e(r,[["render",_]]);export{m as __pageData,f as default};
