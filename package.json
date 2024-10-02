@@ -11,6 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gitee": "vitepress build docs && cd ./dist && git init && git add -A && git commit -m 'deploy' &&  git push -f git@gitee.com:love-feel/blog.git master:git-pages",
     "github": "vitepress build docs && cd ./dist && git init && git add -A && git commit -m 'deploy' &&  git push -f git@github.com:luofatso/luofatso.github.io.git master:git-pages",
+    "top": "cd ./dist && git init && git add -A && git commit -m 'deploy' &&  git push -f git@github.com:luofatso/luofatso.github.io.git master:git-pages",
     "prepare": "husky install"
   },
   "keywords": [],

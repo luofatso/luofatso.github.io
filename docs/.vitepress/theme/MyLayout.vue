@@ -10,7 +10,7 @@ const route = useRoute();
 watch(
   () => route.path,
   () => {
-    if(route.path === '/blog/nav'){
+    if(route.path === '/nav'){
       document.querySelector('.Layout')?.classList.add('nav-layout')
     } else {
       document.querySelector('.Layout')?.classList.remove('nav-layout')
