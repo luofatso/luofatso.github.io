@@ -47,9 +47,22 @@ jobs:
     # 提交并强制推送到 B 仓库
     - name: Commit and force push changes to B repo
       run: |
-        cd blog  # 进入 B 仓库目录
+        cd luofatso.github.io  # 进入 B 仓库目录
         git config --global user.name "luofatso"  # 设置 Git 提交者姓名
         git config --global user.email "luofatso@gmail.com"  # 设置 Git 提交者邮箱
         git add .  # 添加所有更改的文件
         git commit -m "Force update: Add build files from A repo" || echo "No changes to commit"  # 提交更改，如果没有更改则输出提示信息
         git push origin git-pages --force  # 强制推送到 B 仓库的 git-pages 分支
+
+
+    # # 推送打包文件到 B 仓库
+    # - name: Push dist files to B repo
+    #   run: |
+    #     cd dist  # 进入打包文件的目录
+    #     git init  # 初始化一个新的 Git 仓库
+    #     git config --global user.name "luofatso"  # 设置 Git 提交者姓名
+    #     git config --global user.email "luofatso@gmail.com"  # 设置 Git 提交者邮箱
+    #     git add .  # 添加所有打包文件
+    #     git commit -m "Update: Deploy dist files from A repo"  # 提交变更
+    #     git remote add origin https://x-access-token:${{ secrets.B_REPO_TOKEN }}@github.com/luofatso/luofatso.github.io.git  # 添加 B 仓库的远程地址
+    #     git push origin git-pages --force  # 强制推送到 B 仓库的 git-pages 分支
