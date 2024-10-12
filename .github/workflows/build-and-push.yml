@@ -1,0 +1,48 @@
+name: Build and Push to blog Repo  # 工作流的名称
+
+on:
+  push:
+    branches:
+      - master  # 当提交到 main 分支时触发工作流，可以根据需要修改为其他分支
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # 在最新的 Ubuntu 环境中运行作业
+
+    steps:
+    # 检出 A 仓库的代码
+    - name: Checkout A repo
+      uses: actions/checkout@v3  # 使用官方的 checkout action 检出代码
+
+    # 设置 Node.js 环境
+    - name: Setup Node.js
+      uses: actions/setup-node@v3  # 使用官方的 setup-node action 设置 Node.js 环境
+      with:
+        node-version: '18'  # 指定 Node.js 版本为 16
+
+    # 安装 pnpm 并打包
+    - name: Install and build
+      run: |
+        npm install -g pnpm  # 全局安装 pnpm
+        pnpm install  # 使用 pnpm 安装项目依赖
+        pnpm run build  # 使用 pnpm 进行打包
+
+    # 克隆 B 仓库
+    - name: Clone B repo
+      run: |
+        git clone https://x-access-token:${{ secrets.B_REPO_TOKEN }}@github.com/luofatso/luofatso.github.io.git  # 使用 Token 克隆 B 仓库
+
+    # 将打包文件复制到 B 仓库
+    - name: Copy build files to B repo
+      run: |
+        cp -r ./dist/* ./luofatso.github.io/  # 将打包后的文件从 dist 目录复制到 B 仓库
+
+    # 提交并强制推送到 B 仓库
+    - name: Commit and force push changes to B repo
+      run: |
+        cd blog  # 进入 B 仓库目录
+        git config --global user.name "luofatso"  # 设置 Git 提交者姓名
+        git config --global user.email "luofatso@gmail.com"  # 设置 Git 提交者邮箱
+        git add .  # 添加所有更改的文件
+        git commit -m "Force update: Add build files from A repo" || echo "No changes to commit"  # 提交更改，如果没有更改则输出提示信息
+        git push origin git-pages --force  # 强制推送到 B 仓库的 git-pages 分支
