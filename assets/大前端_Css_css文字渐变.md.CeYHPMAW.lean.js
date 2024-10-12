@@ -1,0 +1,9 @@
+import{_ as t,o as a,c as n,d as c,I as l,j as s,a as r,a2 as i}from"./chunks/framework.DkMK-_fX.js";const o={},d={class:"font-line"};function b(e,p){return a(),n("div",d," 我是渐变色的文字 ")}const u=t(o,[["render",b],["__scopeId","data-v-599724f2"]]),_=s("h1",{id:"css文字渐变",tabindex:"-1"},[r("css文字渐变 "),s("a",{class:"header-anchor",href:"#css文字渐变","aria-label":'Permalink to "css文字渐变"'},"​")],-1),m=i(`<div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>&lt;p&gt;我是渐变色的文字&lt;/p&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>p{</span></span>
+<span class="line"><span>  font-size: 60px;</span></span>
+<span class="line"><span>  background-image: linear-gradient(135deg,red,blue);</span></span>
+<span class="line"><span>  background-clip:text;</span></span>
+<span class="line"><span>  -webkit-background-clip:text;</span></span>
+<span class="line"><span>  color: transparent;</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div>`,1),v=JSON.parse('{"title":"css文字渐变","description":"","frontmatter":{},"headers":[],"relativePath":"大前端/Css/css文字渐变.md","filePath":"大前端/Css/css文字渐变.md","lastUpdated":1728700067000}'),h={name:"大前端/Css/css文字渐变.md"},k=c({...h,setup(e){return(p,f)=>(a(),n("div",null,[_,l(u),m]))}});export{v as __pageData,k as default};

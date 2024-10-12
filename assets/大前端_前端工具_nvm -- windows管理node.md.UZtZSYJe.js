@@ -1,0 +1,22 @@
+import{_ as n,o as s,c as a,a2 as e}from"./chunks/framework.DkMK-_fX.js";const p="/assets/nvm-exe.Do9Jg2DM.png",h=JSON.parse('{"title":"nvm","description":"","frontmatter":{},"headers":[],"relativePath":"大前端/前端工具/nvm -- windows管理node.md","filePath":"大前端/前端工具/nvm -- windows管理node.md","lastUpdated":1728700067000}'),l={name:"大前端/前端工具/nvm -- windows管理node.md"},r=e('<h1 id="nvm" tabindex="-1">nvm <a class="header-anchor" href="#nvm" aria-label="Permalink to &quot;nvm&quot;">​</a></h1><h2 id="什么是nvm" tabindex="-1">什么是nvm <a class="header-anchor" href="#什么是nvm" aria-label="Permalink to &quot;什么是nvm&quot;">​</a></h2><p>nvm 是一个node的版本管理工具，可以安装切换node版本。</p><h2 id="安装" tabindex="-1">安装 <a class="header-anchor" href="#安装" aria-label="Permalink to &quot;安装&quot;">​</a></h2><p>下载地址<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noreferrer">下载exe文件</a></p><p><img src="'+p+`" alt="nvm-exe"></p><p>成功后cmd <code>nvm version</code> 看看是否成功</p><h2 id="安装、切换、查看、卸载node" tabindex="-1">安装、切换、查看、卸载node <a class="header-anchor" href="#安装、切换、查看、卸载node" aria-label="Permalink to &quot;安装、切换、查看、卸载node&quot;">​</a></h2><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>nvm for windows是一个命令行工具，在控制台输入nvm,就可以看到它的命令用法。基本命令有：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>nvm arch [32|64] ： 显示node是运行在32位还是64位模式。指定32或64来覆盖默认体系结构。</span></span>
+<span class="line"><span>nvm install &lt;version&gt; [arch]： 该可以是node.js版本或最新稳定版本latest。（可选[arch]）指定安装32位或64位版本（默认为系统arch）。设置[arch]为all以安装32和64位版本。在命令后面添加--insecure ，可以绕过远端下载服务器的SSL验证。</span></span>
+<span class="line"><span>nvm list [available]： 列出已经安装的node.js版本。可选的available，显示可下载版本的部分列表。这个命令可以简写为nvm ls [available]。</span></span>
+<span class="line"><span>nvm on： 启用node.js版本管理。</span></span>
+<span class="line"><span>nvm off： 禁用node.js版本管理(不卸载任何东西)</span></span>
+<span class="line"><span>nvm proxy [url]： 设置用于下载的代理。留[url]空白，以查看当前的代理。设置[url]为none删除代理。</span></span>
+<span class="line"><span>nvm node_mirror [url]：设置node镜像，默认为https://nodejs.org/dist/.。我建议设置为淘宝的镜像https://npm.taobao.org/mirrors/node/</span></span>
+<span class="line"><span>nvm npm_mirror [url]：设置npm镜像，默认为https://github.com/npm/npm/archive/。我建议设置为淘宝的镜像https://npm.taobao.org/mirrors/npm/</span></span>
+<span class="line"><span>nvm uninstall &lt;version&gt;： 卸载指定版本的nodejs。</span></span>
+<span class="line"><span>nvm use [version] [arch]： 切换到使用指定的nodejs版本。可以指定32/64位[arch]。nvm use &lt;arch&gt;将继续使用所选版本，但根据提供的值切换到32/64位模式的&lt;arch&gt;</span></span>
+<span class="line"><span>nvm root [path]： 设置 nvm 存储node.js不同版本的目录 ,如果未设置，将使用当前目录。</span></span>
+<span class="line"><span>nvm version： 显示当前运行的nvm版本，可以简写为nvm v</span></span>
+<span class="line"><span>常用实例</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>nvm list　　//查看目前已经安装的版本</span></span>
+<span class="line"><span>nvm list available //显示可下载版本的部分列表</span></span>
+<span class="line"><span>nvm install 10.15.0 //安装指定的版本的nodejs</span></span>
+<span class="line"><span>nvm use 10.15.0 //使用指定版本的nodejs</span></span>
+<span class="line"><span>npm install -g cnpm --registry=https://registry.npm.taobao.org  //使用淘宝镜像</span></span>
+<span class="line"><span>注：将npm镜像改为淘宝的镜像，可以提高下载速度</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div>`,9),i=[r];function o(t,m,c,d,b,v){return s(),a("div",null,i)}const _=n(l,[["render",o]]);export{h as __pageData,_ as default};
