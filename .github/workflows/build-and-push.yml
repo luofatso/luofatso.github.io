@@ -18,7 +18,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3  # 使用官方的 setup-node action 设置 Node.js 环境
       with:
-        node-version: '18'  # 指定 Node.js 版本为 16
+        node-version: '20'  # 指定 Node.js 版本为 16
 
     # 安装 pnpm 并打包
     - name: Install and build
