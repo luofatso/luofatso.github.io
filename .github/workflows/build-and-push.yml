@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest  # 在最新的 Ubuntu 环境中运行作业
 
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true  # 强制使用 Node.js 20
+
     steps:
     # 检出 A 仓库的代码
     - name: Checkout A repo
