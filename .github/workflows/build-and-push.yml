@@ -52,7 +52,7 @@ jobs:
         git config --global user.email "luofatso@gmail.com"  # 设置 Git 提交者邮箱
         git add .  # 添加所有更改的文件
         git commit -m "Force update: Add build files from A repo" || echo "No changes to commit"  # 提交更改，如果没有更改则输出提示信息
-        git push origin git-pages --force  # 强制推送到 B 仓库的 git-pages 分支
+        git push origin gh-pages --force  # 强制推送到 B 仓库的 git-pages 分支
 
 
     # # 推送打包文件到 B 仓库
