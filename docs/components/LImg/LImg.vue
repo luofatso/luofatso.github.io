@@ -1,5 +1,5 @@
 <template>
-  <div v-if="imgs.length" class="d-flex flex-wrap pt-4 img-box"
+  <div v-if="imgs?.length" class="d-flex flex-wrap pt-4 img-box"
     :class="imgs.length == 1 ? 'justify-center' : 'justify-between'">
     <div class="mb-1 img-box-item" v-for="(it, i) in imgs" :key="i" :class="'imgs' + (imgs.length < 3 ? imgs.length : 3)"
       @click="openImg(it)" :style="{ flex: imgs.length === 1 ? '0 0 ' + width + '%' : '' }">

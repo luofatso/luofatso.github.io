@@ -128,6 +128,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     },
     {
+      text: '露营',
+      collapsed: true,
+      items: [
+        { text: '新津-白果村', link: '/关于生活/露营/新津-白果村' },
+        { text: '简阳-唐家埝', link: '/关于生活/露营/简阳-唐家埝' }
+      ]
+    },
+    {
       text: '小工具',
       collapsed: true,
       items: [
@@ -241,6 +249,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '前端工具',
       collapsed: true,
       items: [
+        { text: 'excel转json', link: '/大前端/前端工具/excel转json' },
+        { text: 'json转excel', link: '/大前端/前端工具/json转excel' },
         { text: 'ngrok -- 内网穿透使用', link: '/大前端/前端工具/ngrok -- 内网穿透使用' },
         {
           text: 'Chocolatey -- windows包管理',
