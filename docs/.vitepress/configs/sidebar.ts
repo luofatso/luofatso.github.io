@@ -128,6 +128,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     },
     {
+      text: '露营',
+      collapsed: true,
+      items: [
+        { text: '新津-白果村', link: '/关于生活/露营/新津-白果村' },
+        { text: '简阳-唐家埝', link: '/关于生活/露营/简阳-唐家埝' }
+      ]
+    },
+    {
       text: '小工具',
       collapsed: true,
       items: [

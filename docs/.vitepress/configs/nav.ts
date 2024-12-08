@@ -37,6 +37,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/关于生活/旅行/'
       },
       {
+        text: '露营',
+        link: '/关于生活/露营/'
+      },
+      {
         text: '生活',
         link: '/关于生活/生活/'
       },
