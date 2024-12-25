@@ -14,7 +14,7 @@
 
 ::: code-group
 
-```vue3[template]
+```vue [template]
 <template>
   <section class="barrage-wrapper" ref="barrageWrapperRef" :style="{ height: percent + '%' }">
     <div class="barrage-main">
@@ -33,7 +33,7 @@
             :style="{
               transform: `translate3d(${barMainWidth}px,0,0)`,
               top: `${it.row * (200 / CHANNEL_COUNT)}px`,
-              animation: it.animation ? 'barrage-run 6s linear' : '',
+              animation: it.animation ? 'barrage-run 6s linear' : ''
             }"
             @animationend="barrageAnimationEnd(it.row, it.col)"
           >
@@ -50,7 +50,7 @@
 </template>
 ```
 
-```vue3[setup]
+```vue [setup]
 <script setup lang="ts" name="LBarrage">
 // import { Vue3Lottie } from 'vue3-lottie'
 // import 'vue3-lottie/dist/style.css'
@@ -81,7 +81,7 @@ type BarrageType = {
 // const appStore = useAppStore()
 const props = withDefaults(defineProps<Props>(), {
   percent: 80,
-  full: false,
+  full: false
 })
 
 const CHANNEL_COUNT = 5 // 行数
@@ -135,7 +135,7 @@ const init = () => {
         actionType: '',
         avatar: '',
         isSelf: false,
-        animation: false,
+        animation: false
       })
     }
     domPool.value.push(doms)
@@ -167,9 +167,12 @@ const shootBarrage = (domItem: BarrageType, dmItem: any, channel: number) => {
 
   // 弹幕全部显示之后 才能开始下一条弹幕
   // 大概 dom.clientWidth * 10 的时间 该条弹幕就从右边全部划出到可见区域 再加1秒保证弹幕之间距离
-  setTimeout(() => {
-    hasPosition.value[channel] = true
-  }, (itemRefs[domItem.col + domItem.row * CHANNEL_COUNT]?.clientWidth || 100) * 10 + 1000)
+  setTimeout(
+    () => {
+      hasPosition.value[channel] = true
+    },
+    (itemRefs[domItem.col + domItem.row * CHANNEL_COUNT]?.clientWidth || 100) * 10 + 1000
+  )
 }
 
 // 获取空闲通道中空闲的dom
@@ -218,12 +221,12 @@ const addBarrage = (res: any) => {
     if (barrages.value.length) {
       barrages.value.unshift({
         ...obj,
-        isSelf: true,
+        isSelf: true
       })
     } else {
       barrages.value.push({
         ...obj,
-        isSelf: true,
+        isSelf: true
       })
     }
   } else {
@@ -243,14 +246,14 @@ watch(
   (val) => {
     // eslint-disable-next-line no-unused-expressions
     val ? pauseBarrage() : playBarrage()
-  },
+  }
 )
 
 watch(
   () => props.full,
   () => {
     setBarrageWidth()
-  },
+  }
 )
 
 onMounted(() => {
@@ -264,19 +267,18 @@ onMounted(() => {
   setBarrageWidth()
 })
 
-
 onBeforeUnmount(() => {
   clearInterval(intervalDM.value)
   intervalDM.value = null
 })
 
 defineExpose({
-  addBarrage,
+  addBarrage
 })
 </script>
 ```
 
-```vue3[scss]
+```vue [scss]
 <style lang="scss">
 .barrage-wrapper {
   overflow: hidden;
@@ -330,7 +332,10 @@ defineExpose({
     font-weight: bold;
     line-height: 1.125;
     opacity: 1;
-    text-shadow: rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px,
+    text-shadow:
+      rgb(0, 0, 0) 1px 0px 1px,
+      rgb(0, 0, 0) 0px 1px 1px,
+      rgb(0, 0, 0) 0px -1px 1px,
       rgb(0, 0, 0) -1px 0px 1px;
 
     &:hover {

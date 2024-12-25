@@ -4,7 +4,7 @@
 
 ::: code-group
 
-```template[template]
+```vue[html]
 <template>
 <div id="moreJob">
   <el-select
@@ -21,7 +21,7 @@
 </template>
 ```
 
-```script-setup[script-setup]
+```vue[js]
 import { Directive } from 'vue'
 
 const vLoadmore: Directive = {

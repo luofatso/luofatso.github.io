@@ -50,7 +50,7 @@ yarn -v
 
 ### 1.克隆代码
 
-```git
+```js
 git clone --recursive git@github.com:xxx-xxx/cbre.git
 ```
 

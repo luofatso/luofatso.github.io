@@ -4,7 +4,7 @@
 
 ::: code-group
 
-```vue3 [JavaScript]
+```vue [JavaScript]
 <script setup>
 const props = defineProps({
   msg: String,
@@ -27,10 +27,9 @@ console.log(props.msg)
   <h1>{{ msg }}</h1>
   <div>{{ title }}</div>
 </template>
-
 ```
 
-```vue3 [TypeScript]
+```vue [TypeScript]
 <script setup lang="ts">
 interface ListItem {
   name: string
@@ -58,22 +57,14 @@ console.log(props.list[0].age)
 
 ::: code-group
 
-```vue3 [JavaScript]
-const emits = defineEmits(['changeMsg'])
-
-const handleChangeMsg = () => {
-  emits('changeMsg', 'Hello TS')
-}
+```vue [JavaScript]
+const emits = defineEmits(['changeMsg']) const handleChangeMsg = () => { emits('changeMsg', 'Hello
+TS') }
 ```
 
-```vue3 [TypeScript]
-const emits = defineEmits<{
-  (e: 'changeMsg', value: string): void
-}>()
-
-const handleChangeMsg = () => {
-  emits('changeMsg', 'Hello TS')
-}
+```vue [TypeScript]
+const emits = defineEmits<{ (e: 'changeMsg', value: string): void }>() const handleChangeMsg = () =>
+{ emits('changeMsg', 'Hello TS') }
 ```
 
 :::
@@ -84,30 +75,16 @@ const handleChangeMsg = () => {
 
 Vue3 提供了 defineExpose 编译器宏，可以显式地暴露需要暴露的组件中声明的变量和方法。
 
-```
-const msg = ref<string>('Hello Vue3')
-
-const handleChangeMsg = (v: string) => {
-  msg.value = v
-}
-
-defineExpose({
-  msg,
-  handleChangeMsg
-})
+```vue
+const msg = ref
+<string></string>
 ```
 
 ## 4.watch
 
-```
-watch(
-  () => route,
-  (newVal) => {
-    state.currentPath = newVal.name === 'UserRole' ? '/user-role' : newVal.path
-  },
-  { deep: true }
-)
-
+```vue
+watch( () => route, (newVal) => { state.currentPath = newVal.name === 'UserRole' ? '/user-role' :
+newVal.path }, { deep: true } )
 ```
 
 ## 5.样式穿透

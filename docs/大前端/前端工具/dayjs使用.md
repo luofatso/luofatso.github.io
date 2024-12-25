@@ -10,19 +10,19 @@
 
 ::: code-group
 
-```npm [npm]
+```js [npm]
 npm install dayjs
 ```
 
-```yarn [yarn]
+```js [yarn]
 yarn add dayjs
 ```
 
-```pnpm [pnpm]
+```js [pnpm]
 pnpm add dayjs
 ```
 
-```cdn [cdn]
+```js [cdn]
 <script src="https://unpkg.com/dayjs"></script>
 ```
 
@@ -78,7 +78,7 @@ dayjs().isBetween('2000-10-10', '2020-10-10', 'month')
 
 ::: code-group
 
-```js[js]
+```js [js]
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 
@@ -103,7 +103,7 @@ const countdown = () => {
 setInterval(countdown, 1000)
 ```
 
-```vue[vue]
+```vue [vue]
 <script setup>
 const format = '[<span>]HH[</span>] 时 [<span>]mm[</span>] 分 [<span>]ss[</span>] 秒'
 </script>
