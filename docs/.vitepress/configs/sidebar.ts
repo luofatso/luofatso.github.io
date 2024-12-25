@@ -176,7 +176,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '立方体旋转', link: '/大前端/Css/立方体旋转' },
         { text: 'css自动打字器', link: '/大前端/Css/css自动打字器' },
         { text: 'css loading', link: '/大前端/Css/css-loading' },
-        { text: 'css画心', link: '/大前端/Css/css画心' }
+        { text: 'css画心', link: '/大前端/Css/css画心' },
+        { text: '粘性定位', link: '/大前端/Css/粘性定位' }
       ]
     },
     {
