@@ -183,6 +183,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'JavaScript',
       collapsed: true,
       items: [
+        { text: '一些前端库', link: '/大前端/JavaScript/一些前端库' },
         { text: 'ES6小技巧', link: '/大前端/JavaScript/ES6小技巧' },
         { text: '原生js拖拽', link: '/大前端/JavaScript/原生js拖拽' },
         { text: 'JS返回顶部', link: '/大前端/JavaScript/js返回顶部的几种解决方案' },
