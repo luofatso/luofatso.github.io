@@ -271,7 +271,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'vscode常用插件', link: '/大前端/前端工具/vscode常用插件' },
         { text: 'dayjs使用', link: '/大前端/前端工具/dayjs使用' },
         { text: 'Sourcetree', link: '/大前端/前端工具/Sourcetree' },
-        { text: '油猴脚本', link: '/大前端/前端工具/油猴脚本' }
+        { text: '油猴脚本', link: '/大前端/前端工具/油猴脚本' },
+        { text: 'NRM', link: '/大前端/前端工具/nrm' }
       ]
     },
     {
