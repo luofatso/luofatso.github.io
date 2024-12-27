@@ -35,6 +35,18 @@ set-ExecutionPolicy RemoteSigned
 ::: warning 注意
 
 1. 如果还是不行则先卸载，执行命令 `npm uninstall -g yarn` ，再重新安装 `npm i yarn -g` ， 再次查看版本检验是否正常。
+
 2. 还有些情况比如说使用的是nvm控制nodejs的版本，下载的yarn包要放在对应nodejs版本的node_modules下面
    ![nvm对应版本下yarn](./img/yarn1.png)
-   :::
+
+:::
+
+## Error: certificate has expired问题
+
+按照依赖时报错，【HTTPS 证书验证失败】导致的这个问题！
+
+**解决方案：** 将yarn配置中的 strict-ssl 设置为 flase , 在 info yarn config 信息中， 'strict-ssl' 为 true，表示需要验证 HTTPS 证书。我们可以将 'strict-ssl' 设置为 false，跳过 HTTPS 证书验证。
+
+```js
+yarn config set "strict-ssl" false -g
+```
