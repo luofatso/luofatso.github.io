@@ -14,7 +14,7 @@
 
 ::: code-group
 
-```template[template]
+```vue[template]
 <el-button type="primary" v-print="'#print'">打印机型二维码</el-button>
 <div class="print">
   <div id="print">
@@ -31,7 +31,7 @@
 </div>
 ```
 
-```setup[setup]
+```vue[setup]
 import QrcodeVue from 'qrcode.vue'
 import print from 'vue3-print-nb'
 
@@ -40,7 +40,7 @@ const vPrint = print
 const printData = ref(['GCV145H-A4G7-NH1-B', 'GCV145H-A4G7-NH1-A'])
 ```
 
-```scss[scss]
+```css[scss]
 .print {
   width: 0;
   height: 0;

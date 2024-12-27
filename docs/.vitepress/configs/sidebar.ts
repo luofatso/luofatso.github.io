@@ -176,13 +176,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '立方体旋转', link: '/大前端/Css/立方体旋转' },
         { text: 'css自动打字器', link: '/大前端/Css/css自动打字器' },
         { text: 'css loading', link: '/大前端/Css/css-loading' },
-        { text: 'css画心', link: '/大前端/Css/css画心' }
+        { text: 'css画心', link: '/大前端/Css/css画心' },
+        { text: '粘性定位', link: '/大前端/Css/粘性定位' }
       ]
     },
     {
       text: 'JavaScript',
       collapsed: true,
       items: [
+        { text: '一些前端库', link: '/大前端/JavaScript/一些前端库' },
         { text: 'ES6小技巧', link: '/大前端/JavaScript/ES6小技巧' },
         { text: '原生js拖拽', link: '/大前端/JavaScript/原生js拖拽' },
         { text: 'JS返回顶部', link: '/大前端/JavaScript/js返回顶部的几种解决方案' },
@@ -269,7 +271,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'vscode常用插件', link: '/大前端/前端工具/vscode常用插件' },
         { text: 'dayjs使用', link: '/大前端/前端工具/dayjs使用' },
         { text: 'Sourcetree', link: '/大前端/前端工具/Sourcetree' },
-        { text: '油猴脚本', link: '/大前端/前端工具/油猴脚本' }
+        { text: '油猴脚本', link: '/大前端/前端工具/油猴脚本' },
+        { text: 'NRM', link: '/大前端/前端工具/nrm' }
       ]
     },
     {

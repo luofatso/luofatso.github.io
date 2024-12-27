@@ -4,7 +4,7 @@ vue3中使用element-plus table的多选框默认选择及禁止选择等
 
 ## 1.禁止选择
 
-```vue3{15,19-21}
+```vue{15,19-21}
 <el-table
   ref="multipleTableRef"
   v-loading="tableLoad"
@@ -57,7 +57,7 @@ const handleSelectionChange = (version: IVersion[]) => {
 
 ## 4.后端排序
 
-```vue3{14}
+```vue{14}
 <el-table
   ref="multipleTableRef"
   v-loading="tableLoad"
@@ -80,7 +80,7 @@ const handleSelectionChange = (version: IVersion[]) => {
 
 ## 5.表格默认排序
 
-```vue3{7,8,20-24}
+```vue{7,8,20-24}
 <el-table
   ref="multipleTableRef"
   v-loading="tableLoad"

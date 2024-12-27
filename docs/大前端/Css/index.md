@@ -19,3 +19,4 @@
 13. [css自动打字器](./css%E8%87%AA%E5%8A%A8%E6%89%93%E5%AD%97%E5%99%A8.md)
 14. [css loading](./css-loading.md)
 15. [css画心](./css%E7%94%BB%E5%BF%83.md)
+16. [粘性定位](./粘性定位.md)
