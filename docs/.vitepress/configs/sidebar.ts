@@ -150,6 +150,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '其他',
       collapsed: true,
       items: [
+        { text: '一切都要支付两次', link: '/关于生活/other/一切都要支付两次' },
         { text: '人类和人生的意义', link: '/关于生活/other/人类和人生的意义' },
         { text: '网络社区的悲剧', link: '/关于生活/other/网络社区的悲剧' },
         { text: '什么行业适合创业', link: '/关于生活/other/什么行业适合创业' },
