@@ -14,9 +14,10 @@
 <script setup lang='ts'>
 import OneDay2023 from './OneDay2023'
 import OneDay2024 from './OneDay2024'
+import OneDay2025 from './OneDay2025'
 import { getRandom } from '../../../../utils/util'
 
-const OneDayAll = [...OneDay2024.reverse(), ...OneDay2023.reverse()]
+const OneDayAll = [...OneDay2025.reverse(), ...OneDay2024.reverse(), ...OneDay2023.reverse()]
 
 const todayOne = OneDayAll[getRandom(OneDayAll.length)]
 
