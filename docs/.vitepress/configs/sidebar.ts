@@ -96,6 +96,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '旅行',
       collapsed: true,
       items: [
+        { text: '崇州-棕溪沟', link: '/关于生活/旅行/崇州-棕溪沟' },
         { text: '大邑-小飞水', link: '/关于生活/旅行/大邑-小飞水' },
         { text: '彭州-铁瓦殿', link: '/关于生活/旅行/彭州-铁瓦殿' },
         { text: '彭州-九峰山', link: '/关于生活/旅行/彭州-九峰山' },
