@@ -135,6 +135,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '露营',
       collapsed: true,
       items: [
+        { text: '邛崃-鱼跳子', link: '/关于生活/露营/邛崃-鱼跳子' },
         { text: '温江-鲁家滩', link: '/关于生活/露营/温江-鲁家滩' },
         { text: '新津-白果村', link: '/关于生活/露营/新津-白果村' },
         { text: '简阳-唐家埝', link: '/关于生活/露营/简阳-唐家埝' }
