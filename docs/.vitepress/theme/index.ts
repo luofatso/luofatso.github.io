@@ -2,12 +2,13 @@ import { h, App } from 'vue'
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import MyLayout from './MyLayout.vue'
+import 'element-plus/dist/index.css'
+import 'element-plus/theme-chalk/dark/css-vars.css'
 import './var.scss'
 
 // import vuetify from './vuetify'
 
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+// import ElementPlus from 'element-plus'
 
 export default Object.assign(
   {},
@@ -17,12 +18,14 @@ export default Object.assign(
     //   app.use(vuetify)
     // },
     enhanceApp: async ({ app }: any) => {
+      // app.use(ElementPlus)
+
       // app is the Vue 3 app instance from `createApp()`. router is VitePress'
       // custom router. `siteData`` is a `ref`` of current site-level metadata.
-      import("element-plus").then((module) => {
-        app.use(module);
-      });
-    },
+      import('element-plus').then((module) => {
+        app.use(module)
+      })
+    }
   },
   {
     Layout: () => {
@@ -36,6 +39,6 @@ export default Object.assign(
       }
 
       return h(MyLayout, props)
-    },
-  },
+    }
+  }
 )
