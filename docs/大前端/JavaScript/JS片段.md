@@ -103,3 +103,20 @@ const uniqueByArray = (arr, key) => {
   return Array.from(new Map(arr.map(item => [item[key], item])).values());
 };
 ```
+
+## 获取随机数
+
+/\*\*
+
+- 获取随机数
+- @param {number} max 最大值
+- @param {number} min 最小值
+- @param {boolean} inclusive 是否包含最大值
+- @returns {number} 随机数
+  _/
+  export const getRendom = (max, min = 1, inclusive = true) => {
+  if (max < min) [max, min] = [min, max]; // 交换 max 和 min
+  return inclusive
+  ? ~~(Math.random() _ (max - min + 1)) + min // 包含 max
+  : ~~(Math.random() \* (max - min)) + min; // 不包含 max
+  };
