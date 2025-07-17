@@ -95,3 +95,11 @@ const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme
 ```
 const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
 ```
+
+## 数组对象某个值去重
+
+```
+const uniqueByArray = (arr, key) => {
+  return Array.from(new Map(arr.map(item => [item[key], item])).values());
+};
+```
