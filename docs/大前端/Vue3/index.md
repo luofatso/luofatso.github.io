@@ -4,6 +4,7 @@
 
 ## 目录
 
+1. [vue3中可编辑div](./vue3中可编辑div.md)
 1. [vue3弹幕](./vue3弹幕.md)
 1. [vue3打印](./vue3打印.md)
 1. [pinia使用](./pinia%E4%BD%BF%E7%94%A8.md)
