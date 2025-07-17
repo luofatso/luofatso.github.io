@@ -226,6 +226,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'Vue3',
       collapsed: true,
       items: [
+        { text: 'vue3中可编辑div', link: '/大前端/Vue3/vue3中可编辑div' },
         { text: 'vue3弹幕', link: '/大前端/Vue3/vue3弹幕' },
         { text: 'vue3打印', link: '/大前端/Vue3/vue3打印' },
         { text: 'pinia使用', link: '/大前端/Vue3/pinia使用' },
