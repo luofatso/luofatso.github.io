@@ -123,3 +123,50 @@ export const getRendom = (max, min = 1, inclusive = true) => {
     : ~~(Math.random() * (max - min)) + min // 不包含 max
 }
 ```
+
+## 13.异步重试
+
+```js
+/**
+ * 异步重试
+ * @param {function} fn 异步函数
+ * @param {number} retries 重试次数
+ * @param {number} delay 重试间隔
+ * @returns {Promise} 异步函数返回的 Promise
+ */
+export const apiRetry = async (fn, retries = 3, delay = 1000) => {
+  try {
+    return await fn()
+  } catch (error) {
+    if (retries <= 0) throw error
+    await new Promise((resolve) => setTimeout(resolve, delay))
+    return apiRetry(fn, retries - 1, delay)
+  }
+}
+```
+
+## 14. 首字母大写
+
+```js
+/**
+ * 首字母大写
+ * @param {string} str 字符串
+ * @returns {string} 首字母大写后的字符串
+ */
+export const upperFirst = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+```
+
+## 15.生成随机字符串
+
+```js
+/**
+ * 生成随机字符串
+ * @param {number} length 字符串长度
+ * @returns {string} 随机字符串
+ */
+export const randomString = (length = 6) => {
+  return Math.random()
+    .toString(36)
+    .substring(2, 2 + length)
+}
+```
