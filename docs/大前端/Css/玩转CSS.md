@@ -86,7 +86,7 @@
 
 css选择器又被称为css样式属性、css属性选择器，你了解、使用了哪些选择器？
 
-```
+```css
 h1 {
   ···
 }
@@ -367,7 +367,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 
 在线演示：[transform画心形](https://codepen.io/luofatso/pen/xxYjExY)
 
-```
+```css
 <div class="heart-shape"></div>
 
 .heart-shape {
@@ -541,7 +541,7 @@ CSS变量又名CSS自定义属性，指可在整个文档中重复使用的值�
 - 不用深层遍历DOM改变某个样式
 - js访问
 
-  ```
+  ```js
   // 定义
   :root {
     --main-color: '#ffeead'
@@ -563,7 +563,7 @@ CSS变量又名CSS自定义属性，指可在整个文档中重复使用的值�
 
 在线演示：[条形加载](https://codepen.io/luofatso/pen/Yzeemjy)
 
-```
+```js
 // 使用前
 <ul class="strip-loading">
   <li v-for="v in 6" :key="v"></li>
@@ -612,7 +612,7 @@ CSS变量又名CSS自定义属性，指可在整个文档中重复使用的值�
 }
 ```
 
-```
+```js
 // 使用后
 <ul class="strip-loading">
   <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
@@ -670,7 +670,7 @@ CSS变量又名CSS自定义属性，指可在整个文档中重复使用的值�
 
 传统方案：
 
-```
+```scss
 @for $i from 1 through 10 {
   .m-#{$i} {
     margin: $i / 4 rem;
@@ -680,17 +680,22 @@ CSS变量又名CSS自定义属性，指可在整个文档中重复使用的值�
 
 编译结果为：
 
-```
-
-.m-1 { margin: 0.25 rem; }
-.m-2 { margin: 0.5 rem; }
+```css
+.m-1 {
+  margin: 0.25 rem;
+}
+.m-2 {
+  margin: 0.5 rem;
+}
 /* ... */
-.m-10 { margin: 2.5 rem; }
+.m-10 {
+  margin: 2.5 rem;
+}
 ```
 
 > 原子化：原子化 CSS 是一种 CSS 的架构方式，它倾向于小巧且用途单一的 class，并且会以视觉效果进行命名。
 
-```
+```css
 .m-0 {
   margin: 0;
 }

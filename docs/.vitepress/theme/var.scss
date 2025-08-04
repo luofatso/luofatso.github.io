@@ -139,7 +139,7 @@ html.dark {
 .self-start {
   align-self: flex-start;
 }
-.box-center {
+.box-center, .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
