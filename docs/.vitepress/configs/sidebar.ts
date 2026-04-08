@@ -97,6 +97,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '旅行',
       collapsed: true,
       items: [
+        { text: '成都-绿道', link: '/关于生活/旅行/成都-绿道' },
         { text: '崇州-棕溪沟', link: '/关于生活/旅行/崇州-棕溪沟' },
         { text: '大邑-小飞水', link: '/关于生活/旅行/大邑-小飞水' },
         { text: '彭州-铁瓦殿', link: '/关于生活/旅行/彭州-铁瓦殿' },
@@ -128,7 +129,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         { text: '每日一点', link: '/关于生活/生活/每日一点' },
         { text: '间隙', link: '/关于生活/生活/间隙' },
-        { text: '露台阳光', link: '/关于生活/生活/露台阳光' }
+        { text: '露台阳光', link: '/关于生活/生活/露台阳光' },
+        { text: '绿道', link: '/关于生活/旅行/成都-绿道' }
       ]
     },
     {
