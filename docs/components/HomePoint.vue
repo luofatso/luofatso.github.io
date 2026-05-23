@@ -34,7 +34,7 @@ const OneDayAll = [...oneDay2024.reverse(), ...oneDay2023.reverse()]
 const oneDayArr = ref([])
 const scrollWrapper = ref(null)
 const translateX = ref(0)
-const winH = window.innerHeight
+const winH = ref(0)
 
 const getOneDay = () => {
   for (let index = 0; index < 5; index++) {
@@ -47,13 +47,14 @@ const getOneDay = () => {
 
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop
-  if (scrollY >= winH + 200 && scrollY <= 5 * winH - 400) {
-    const newX = -(scrollY - winH - 260)
+  if (scrollY >= winH.value + 200 && scrollY <= 5 * winH.value - 400) {
+    const newX = -(scrollY - winH.value - 260)
     translateX.value = newX > 0 ? 0 : newX
   }
 }
 
 onMounted(() => {
+  winH.value = window.innerHeight
   getOneDay()
   document.addEventListener('scroll', handleScroll)
 })

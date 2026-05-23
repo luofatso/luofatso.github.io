@@ -18,6 +18,11 @@
   "author": "",
   "license": "ISC",
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "vue-demi",
+      "sass-embedded"
+    ],
     "peerDependencyRules": {
       "ignoreMissing": [
         "@algolia/client-search",
@@ -41,9 +46,10 @@
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "qrcode.vue": "^3.4.1",
-    "sass": "^1.58.3",
+    "sass": "^1.100.0",
+    "sass-embedded": "^1.100.0",
     "valine": "^1.5.1",
-    "vitepress": "^1.3.4",
+    "vitepress": "^1.6.4",
     "vue": "^3.2.47",
     "vue3-print-nb": "^0.1.4"
   },

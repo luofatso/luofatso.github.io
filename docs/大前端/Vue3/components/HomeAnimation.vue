@@ -68,9 +68,8 @@ const bgLoad = () => {
   }
 };
 
-initGrid();
-
 onMounted(() => {
+  initGrid();
   bgLoad();
 });
 </script>
