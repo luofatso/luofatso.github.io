@@ -4,6 +4,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   { text: '首页', link: '/' },
   { text: '关于我', link: '/about' },
   { text: '网站导航', link: '/nav' },
+  { text: 'baby音乐', link: '/baby-music' },
   {
     text: '个人随笔',
     items: [

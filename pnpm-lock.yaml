@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      medium-zoom:
+        specifier: ^1.1.0
+        version: 1.1.0
       photoswipe:
         specifier: ^5.4.4
         version: 5.4.4
@@ -36,9 +39,6 @@ importers:
       dayjs:
         specifier: ^1.11.7
         version: 1.11.13
-      duration:
-        specifier: link:dayjs/plugin/duration
-        version: link:dayjs/plugin/duration
       element-plus:
         specifier: ^2.4.1
         version: 2.8.6(vue@3.5.12(typescript@5.6.3))
@@ -2021,6 +2021,9 @@ packages:
 
   mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
+
+  medium-zoom@1.1.0:
+    resolution: {integrity: sha512-ewyDsp7k4InCUp3jRmwHBRFGyjBimKps/AJLjRSox+2q/2H4p/PNpQf+pwONWlJiOudkBXtbdmVbFjqyybfTmQ==}
 
   memoize-one@6.0.0:
     resolution: {integrity: sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==}
@@ -5056,6 +5059,8 @@ snapshots:
       vfile: 6.0.3
 
   mdurl@1.0.1: {}
+
+  medium-zoom@1.1.0: {}
 
   memoize-one@6.0.0: {}
 
