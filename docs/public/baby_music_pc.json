@@ -2,7 +2,12 @@
   "status": 200,
   "data": {
     "appName": "baby音乐",
-    "version": "V2.0.0",
+    "version": "V2.0.1",
+    "V2.0.1": {
+      "expireTime": "2026-07-31 23:59:59",
+      "lastUpdateTime": "2026-07-06",
+      "updateContent": ["修复已知问题，优化用户体验，过期检查优先使用服务端时间"]
+    },
     "V2.0.0": {
       "expireTime": "2026-07-31 23:59:59",
       "lastUpdateTime": "2026-05-25",
