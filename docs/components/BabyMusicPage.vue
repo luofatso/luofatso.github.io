@@ -42,7 +42,7 @@
             桌面版 下载
           </a>
         </div>
-        <p class="hero-ver reveal">v2.2.1 &nbsp;·&nbsp; v2.0.1</p>
+        <p class="hero-ver reveal">v2.2.2 &nbsp;·&nbsp; v2.0.1</p>
         <p class="hero-disclaimer reveal">* 个人兴趣学习项目，下载使用自行承担风险，传播导致的任何法律风险概不负责</p>
       </div>
 

@@ -2,7 +2,16 @@
   "status": 200,
   "data": {
     "appName": "baby音乐",
-    "version": "V2.2.1",
+    "version": "V2.2.2",
+    "V2.2.2": {
+      "expireTime": "2026-08-31 23:59:59",
+      "lastUpdateTime": "2026-07-12",
+      "updateContent": [
+        "修复后台控制器不显示与不自动切歌问题",
+        "导入数据直接支持PC导出的数据",
+        "修复其他已知问题"
+      ]
+    },
     "V2.2.1": {
       "expireTime": "2026-07-31 23:59:59",
       "lastUpdateTime": "2026-07-06",
