@@ -21,6 +21,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/个人随笔/星星/'
       },
       {
+        text: '点点',
+        link: '/个人随笔/点点/'
+      },
+      {
         text: '星光',
         link: '/个人随笔/星光/'
       }

@@ -27,7 +27,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         { text: '星星', link: '/个人随笔/星星/星星' },
         { text: '驿站', link: '/个人随笔/星星/驿站' },
-        { text: '错误', link: '/个人随笔/星星/错误' }
+        { text: '错误', link: '/个人随笔/星星/错误' },
+        { text: '来自jy的信', link: '/个人随笔/星星/来自jy的信' }
       ]
     },
     {
@@ -35,9 +36,13 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       // collapsible: true,
       collapsed: true,
       items: [
+        // {
+        //   text: '逆向思维',
+        //   link: '/个人随笔/点点/逆向思维'
+        // },
         {
-          text: '逆向思维',
-          link: '/个人随笔/点点/逆向思维'
+          text: '我与文字之间，没有一见钟情',
+          link: '/个人随笔/点点/我与文字之间，没有一见钟情'
         }
       ]
     },
