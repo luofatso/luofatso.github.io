@@ -4,7 +4,7 @@
     "appName": "baby音乐",
     "version": "V2.0.1",
     "V2.0.1": {
-      "expireTime": "2026-08-31 23:59:59",
+      "expireTime": "2026-11-30 23:59:59",
       "lastUpdateTime": "2026-07-06",
       "updateContent": ["修复已知问题，优化用户体验，过期检查优先使用服务端时间"]
     },
