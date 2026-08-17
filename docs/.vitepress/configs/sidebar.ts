@@ -41,6 +41,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         //   link: '/个人随笔/点点/逆向思维'
         // },
         {
+          text: '做梦的年龄',
+          link: '/个人随笔/点点/做梦的年龄'
+        },
+        {
+          text: '山海自有归期',
+          link: '/个人随笔/点点/山海自有归期'
+        },
+        {
           text: '我与文字之间，没有一见钟情',
           link: '/个人随笔/点点/我与文字之间，没有一见钟情'
         }
