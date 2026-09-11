@@ -1,0 +1,30 @@
+import{f as n,ag as a,o as p,s as e}from"./chunks/framework.D85dHE_g.js";const o=JSON.parse('{"title":"童话","description":"","frontmatter":{},"headers":[],"relativePath":"个人随笔/骚动的心/童话.md","filePath":"个人随笔/骚动的心/童话.md","lastUpdated":1727401965000}'),l={name:"个人随笔/骚动的心/童话.md"};function i(r,s,c,b,t,u){return a(),p("div",null,s[0]||(s[0]=[e(`<h1 id="童话" tabindex="-1">童话 <a class="header-anchor" href="#童话" aria-label="Permalink to &quot;童话&quot;">​</a></h1><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>不完美是这个世界的符咒</span></span>
+<span class="line"><span>愚蠢的人却总是固执追求</span></span>
+<span class="line"><span>几番泪流过后</span></span>
+<span class="line"><span>却说根本就不复有</span></span>
+<span class="line"><span>还说这滴小伤</span></span>
+<span class="line"><span>又能算什么</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>书中的故事</span></span>
+<span class="line"><span>空洞又虚无</span></span>
+<span class="line"><span>却似就他们所说的完美</span></span>
+<span class="line"><span>我也尝试过去触碰</span></span>
+<span class="line"><span>留给我的只是干涩</span></span>
+<span class="line"><span>始终不想承认</span></span>
+<span class="line"><span>承认现实中生活给我束缚</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>时间早已</span></span>
+<span class="line"><span>早已苍白</span></span>
+<span class="line"><span>苍白给我无尽凄凉</span></span>
+<span class="line"><span>还说这滴小伤</span></span>
+<span class="line"><span>又能算什么</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>又是否定童话世界</span></span>
+<span class="line"><span>童话早已封锁在那儿时记忆</span></span>
+<span class="line"><span>只有犯错那时</span></span>
+<span class="line"><span>才能想起</span></span>
+<span class="line"><span>可怜童话</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  LuoFatso</span></span>
+<span class="line"><span>  2012-9-21</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div>`,2)]))}const d=n(l,[["render",i]]);export{o as __pageData,d as default};

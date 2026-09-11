@@ -1,0 +1,7 @@
+import{f as a,ag as n,o as e,s as p}from"./chunks/framework.D85dHE_g.js";const u=JSON.parse('{"title":"何许","description":"","frontmatter":{},"headers":[],"relativePath":"个人随笔/骚动的心/何许.md","filePath":"个人随笔/骚动的心/何许.md","lastUpdated":1727401965000}'),l={name:"个人随笔/骚动的心/何许.md"};function t(i,s,r,c,o,d){return n(),e("div",null,s[0]||(s[0]=[p(`<h1 id="何许" tabindex="-1">何许 <a class="header-anchor" href="#何许" aria-label="Permalink to &quot;何许&quot;">​</a></h1><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>高楼几何霄，</span></span>
+<span class="line"><span>轻风几时止。</span></span>
+<span class="line"><span>闲等几何许，</span></span>
+<span class="line"><span>提笔几时情。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  LuoFatso</span></span>
+<span class="line"><span>  2012-7-7</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div>`,2)]))}const m=a(l,[["render",t]]);export{u as __pageData,m as default};

@@ -1,0 +1,9 @@
+import{f as l,ag as n,o as e,x as r,l as a,t as c,u as i,s as d}from"./chunks/framework.D85dHE_g.js";const o={},b={class:"font-line"};function _(p,t){return n(),e("div",b," 我是渐变色的文字 ")}const u=l(o,[["render",_],["__scopeId","data-v-6e7d570d"]]),f=JSON.parse('{"title":"css文字渐变","description":"","frontmatter":{},"headers":[],"relativePath":"大前端/Css/css文字渐变.md","filePath":"大前端/Css/css文字渐变.md","lastUpdated":1727401527000}'),m={name:"大前端/Css/css文字渐变.md"},h=r({...m,setup(p){return(t,s)=>(n(),e("div",null,[s[0]||(s[0]=a("h1",{id:"css文字渐变",tabindex:"-1"},[c("css文字渐变 "),a("a",{class:"header-anchor",href:"#css文字渐变","aria-label":'Permalink to "css文字渐变"'},"​")],-1)),i(u),s[1]||(s[1]=d(`<div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>&lt;p&gt;我是渐变色的文字&lt;/p&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>p{</span></span>
+<span class="line"><span>  font-size: 60px;</span></span>
+<span class="line"><span>  background-image: linear-gradient(135deg,red,blue);</span></span>
+<span class="line"><span>  background-clip:text;</span></span>
+<span class="line"><span>  -webkit-background-clip:text;</span></span>
+<span class="line"><span>  color: transparent;</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div>`,1))]))}});export{f as __pageData,h as default};
